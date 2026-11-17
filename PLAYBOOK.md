@@ -60,7 +60,7 @@ QA before upload: view frames at every caption, verse card and the end card; no 
 3. Composio `INSTAGRAM_POST_IG_USER_MEDIA` (media_type REELS, video_url, caption, share_to_feed true) with the right account, then `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` (max_wait_seconds 180).
 4. **Approval period (until 2026-12-01):** don't publish until Adhil replies "approve" in the run's conversation; send both MP4s + captions first. After that date, publish directly.
 
-Caption: hook line · source line(s) · one short reflection · CTA (save/share) · 4–6 hashtags (mix of #islamicreminder #quran #hadith #sunnah #dua and, for Malayalam, #malayalamislamic #ഇസ്ലാം).
+Caption: write hashtags with a plain `#` — never `%23` (Composio's schema hint is wrong; `%23` shows up literally). Hook line · source line(s) · one short reflection · CTA (save/share) · 4–6 hashtags (mix of #islamicreminder #quran #hadith #sunnah #dua and, for Malayalam, #malayalamislamic #ഇസ്ലാം).
 
 ## 6. Learn and improve
 Every run, first pull the last 14 days of reels for both accounts (Composio `INSTAGRAM_GET_IG_USER_MEDIA` with `insights.metric(views,reach,saved,shares,total_interactions,ig_reels_avg_watch_time)`), and append them to `log.json`. Compare hooks, topic types, length and posting time. Write one line in `log.json` → `learnings` on what to try next, and apply it to today's script. Change one variable at a time.

@@ -1,6 +1,27 @@
-{"posts":[
- {"date": "2026-11-17", "type": "ayah", "topic": "With hardship comes ease", "source": "Qur'an 94:5-6; Tafsir Ibn Kathir", "hook": "Feeling crushed by what you're carrying right now?", "en_media_id": null, "ml_media_id": null, "metrics": {}}
-],
-"learnings":[
- {"date": "2026-11-17", "note": "No reels live yet on either account (0 media returned), so no metrics; keep the baseline format until the first posts have data."}
-]}
+{
+ "posts": [
+  {
+   "date": "2026-11-17",
+   "type": "ayah",
+   "topic": "With hardship comes ease",
+   "source": "Qur'an 94:5-6; Tafsir Ibn Kathir",
+   "hook": "Feeling crushed by what you're carrying right now?",
+   "en_media_id": "17885106351629798",
+   "ml_media_id": "18039489485904643",
+   "en_url": "https://www.instagram.com/reel/Df1y6Icid9v/",
+   "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
+   "posted_utc": "2026-11-17T11:13",
+   "metrics": {}
+  }
+ ],
+ "learnings": [
+  {
+   "date": "2026-11-17",
+   "note": "No reels live yet on either account (0 media returned), so no metrics; keep the baseline format until the first posts have data."
+  },
+  {
+   "date": "2026-11-17",
+   "note": "Hashtags must be plain # in captions; %23 shows up literally."
+  }
+ ]
+}
