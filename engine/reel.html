@@ -201,7 +201,7 @@ function chunks(TL){const out=[],lim=TL.lang==='ml'?24:24;
   return out}
 let CH=null;
 window.renderAt=function(t){
-  const TL=window.TL,D=TL.duration,ml=TL.lang==='ml';document.body.className='lang-'+TL.lang;if(!CH)CH=chunks(TL);
+  const TL=window.TL,D=TL.duration,ml=TL.lang==='ml';document.body.className='lang-'+TL.lang;if(!CH)CH=TL.chunks&&TL.chunks.length?TL.chunks:chunks(TL);
   const bg=TL.bg;let i=0;while(i+1<bg.length&&t>=bg[i+1].start)i++;
   const cur=bg[i],prev=bg[Math.max(0,i-1)],mx=i>0?ease((t-cur.start)/1.4):1;
   gl.viewport(0,0,432,768);gl.uniform2f(U("R"),432,768);gl.uniform1f(U('T'),t+(TL.seed||0));
