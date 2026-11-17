@@ -96,7 +96,8 @@ def main(d):
         a = a - .3 if j == 0 else a
         b = spans[keys[j + 1]][0] if j + 1 < len(keys) else b + .6
         scenes.append({"start": round(a, 3), "end": round(b, 3), **S["scenes"][k]})
-    TL = {"lang": lang, "duration": total, "handle": S["handle"], "scenes": scenes, "caps": caps, "endcard": S.get("endcard", ""), "bg": bg, "seed": S.get("seed", 3)}
+    TL = {"lang": lang, "duration": total, "handle": S["handle"], "scenes": scenes, "caps": caps, "endcard": S.get("endcard", ""), "bg": bg, "seed": S.get("seed", 3), "save": S.get("save"),
+          "logo": (ROOT.parent / "brand" / ("logo-daily-gold.png" if lang == "en" else "logo-malayalam-gold.png")).as_uri()}
     (d / "timeline.json").write_text(json.dumps(TL, ensure_ascii=False, indent=1))
     render(d, TL)
 

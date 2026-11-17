@@ -17,8 +17,8 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09
 .txt{text-wrap:balance;position:absolute;left:96px;right:96px;text-align:center;color:var(--cream);text-shadow:0 4px 30px rgba(0,0,0,.6)}
 #top{top:205px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:14px;
   font-family:Inter;font-weight:700;font-size:26px;letter-spacing:7px;color:rgba(247,240,222,.8);text-transform:uppercase}
-#top img{width:40px;height:40px}
-#hook{top:380px;height:560px;display:flex;align-items:center;justify-content:center}
+#top img{width:190px;height:auto;filter:drop-shadow(0 4px 14px rgba(0,0,0,.5))}
+#hook{top:450px;height:560px;display:flex;align-items:center;justify-content:center}
 #hook div{font-family:Serif;font-weight:600;line-height:1.16}
 #cap{top:1210px;height:300px;display:flex;align-items:center;justify-content:center}
 #cap.mid{top:1170px}
@@ -37,21 +37,28 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09
 #ref span{display:inline-block;padding:12px 30px;border:1.5px solid rgba(216,180,106,.75);border-radius:40px;background:rgba(2,12,9,.75);
   font-family:Inter,ML;font-weight:700;font-size:26px;letter-spacing:5px;color:var(--gold2);text-transform:uppercase}
 #end{inset:0}
-#end img{position:absolute;left:315px;top:420px;width:450px}
-#endar{top:620px;font-family:Amiri;font-weight:700;font-size:78px;
+#endbg{position:absolute;inset:0;background:radial-gradient(ellipse 110% 70% at 50% 40%,rgba(19,86,63,.92),rgba(6,36,27,.96) 55%,rgba(2,14,10,.98))}
+#endlogo{position:absolute;left:370px;top:230px;width:340px;filter:drop-shadow(0 6px 20px rgba(0,0,0,.45))}
+#savear{white-space:pre-line;top:600px;height:340px;display:flex;align-items:center;justify-content:center;font-family:Amiri;font-weight:700;direction:rtl;line-height:1.7;
   background:linear-gradient(#fbe9b8,#d8b46a 60%,#b08840);-webkit-background-clip:text;color:transparent;text-shadow:none}
-#endtx{top:1000px;height:180px;display:flex;align-items:center;justify-content:center}
-#endtx div{font-family:Serif;font-weight:600;line-height:1.3}
-#endh{top:1200px;font-family:Inter;font-weight:700;font-size:34px;letter-spacing:4px;color:var(--gold2)}
+#savetr{top:960px;height:200px;display:flex;align-items:center;justify-content:center}
+#savetr div{font-family:Serif;font-style:italic;font-weight:600;line-height:1.38}
+#saveref{top:1170px}
+#saveref span{display:inline-block;padding:12px 30px;border:1.5px solid rgba(216,180,106,.75);border-radius:40px;
+  font-family:Inter,ML;font-weight:700;font-size:26px;letter-spacing:5px;color:var(--gold2);text-transform:uppercase}
+#endtx{top:1265px;height:120px;display:flex;align-items:center;justify-content:center}
+#endtx div{font-family:Inter,ML;font-weight:700;line-height:1.35;color:var(--gold2)}
+#endh{top:1385px;font-family:Inter;font-weight:700;font-size:30px;letter-spacing:4px;color:rgba(247,240,222,.75)}
 #bar{left:96px;right:96px;bottom:310px;height:3px;border-radius:2px;background:rgba(247,240,222,.14)}
 #bar i{display:block;height:100%;border-radius:2px;background:linear-gradient(90deg,#b08840,#fbe9b8)}
-.lang-ml #hook div,.lang-ml #cap div,.lang-ml #endtx div{font-family:MLS;line-height:1.5}
+.lang-ml #hook div,.lang-ml #cap div{font-family:MLS;line-height:1.5}
+.lang-ml #savetr div{font-family:MLS;font-style:normal;line-height:1.55}
 .lang-ml #tr{font-family:MLS;font-style:normal;line-height:1.55}
 </style></head>
 <body><div id="stage">
-<canvas id="gl" width="540" height="960"></canvas>
+<canvas id="gl" width="432" height="768"></canvas>
 <div id="shade"></div>
-<div id="top" class="abs"><img src="../brand/logo.svg"><span id="topname"></span></div>
+<div id="top" class="abs"><img id="toplogo"></div>
 <div id="hook" class="txt"><div></div></div>
 <div id="card" class="abs">
  
@@ -64,7 +71,11 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09
  <div id="ar"></div><div id="orn">◆ ◆ ◆</div><div id="tr"></div><div id="ref"><span></span></div>
 </div>
 <div id="cap" class="txt"><div></div></div>
-<div id="end" class="abs"><img src="../brand/logo.svg"><div id="endar" class="txt">عبادة</div><div id="endtx" class="txt"><div></div></div><div id="endh" class="txt"></div></div>
+<div id="end" class="abs"><div id="endbg"></div>
+ <img id="endlogo">
+ <div id="savear" class="txt"></div><div id="savetr" class="txt"><div></div></div>
+ <div id="saveref" class="txt"><span></span></div>
+ <div id="endtx" class="txt"><div></div></div><div id="endh" class="txt"></div></div>
 <div id="bar" class="abs"><i></i></div>
 <canvas id="grain" width="360" height="640"></canvas>
 </div>
@@ -193,12 +204,12 @@ window.renderAt=function(t){
   const TL=window.TL,D=TL.duration,ml=TL.lang==='ml';document.body.className='lang-'+TL.lang;if(!CH)CH=chunks(TL);
   const bg=TL.bg;let i=0;while(i+1<bg.length&&t>=bg[i+1].start)i++;
   const cur=bg[i],prev=bg[Math.max(0,i-1)],mx=i>0?ease((t-cur.start)/1.4):1;
-  gl.viewport(0,0,540,960);gl.uniform2f(U('R'),540,960);gl.uniform1f(U('T'),t+(TL.seed||0));
+  gl.viewport(0,0,432,768);gl.uniform2f(U("R"),432,768);gl.uniform1f(U('T'),t+(TL.seed||0));
   gl.uniform1i(U('SA'),prev.scene);gl.uniform1i(U('SB'),cur.scene);gl.uniform1f(U('MX'),mx);gl.drawArrays(gl.TRIANGLES,0,3);
   cv.style.transform=`scale(${1.05+.035*Math.sin(t*.08)})`;
   const g=$('grain').getContext('2d'),img=g.createImageData(360,640),gr=rng(1+Math.floor(t*30));
   for(let k=0;k<img.data.length;k+=4){const v=gr()*255;img.data[k]=img.data[k+1]=img.data[k+2]=v;img.data[k+3]=255}g.putImageData(img,0,0);
-  once('top',TL.handle.replace('@',''),v=>$('topname').textContent=v);
+  once('top',TL.logo,v=>$('toplogo').src=v);
   const caps=TL.caps,endStart=caps[caps.length-1].end;
   const h=caps[0],hk=fade(t,Math.max(0,h.start-.35),h.end+.1,.5),hd=$('hook').firstChild;
   once('hook',h.text,v=>{hd.textContent=v;fit(hd,ml?82:104,40,888,900)});
@@ -219,13 +230,19 @@ window.renderAt=function(t){
     const k=Math.min(ease((t-x.start)/.3),ease((x.end-t)/.2));
     cd.style.opacity=k;cd.style.transform=`translateY(${(1-k)*14}px)`;cd.style.filter=`blur(${(1-k)*6}px)`}
   else cd.style.opacity=0;
-  const e=ease((t-endStart-.1)/1.),E=$('end');E.style.opacity=e;$('top').style.opacity=1-e;
-  E.querySelector('img').style.transform=`translateY(${(1-e)*30}px)`;
-  once('endtx',TL.endcard||'',v=>{const d=$('endtx').firstChild;d.textContent=v;fit(d,ml?48:56,28,888,180)});
+  const e=ease((t-endStart-.1)/.9),E=$('end');E.style.opacity=e;$('top').style.opacity=(1-e)*(1-ca);
+  const sv=TL.save||S[0]||{ar:'',tr:'',ref:''};
+  once('endlogo',TL.logo,v=>$('endlogo').src=v);
+  once('savear',sv.ar,v=>{$('savear').textContent=v;fit($('savear'),84,40,888,340)});
+  once('savetr',sv.tr,v=>{const d=$('savetr').firstChild;d.textContent=v;fit(d,ml?42:50,24,888,200)});
+  once('saveref',sv.ref,v=>$('saveref').firstChild.textContent=v);
+  once('endtx',TL.endcard||'',v=>{const d=$('endtx').firstChild;d.textContent=v;fit(d,ml?36:40,22,888,120)});
   once('endh',TL.handle,v=>$('endh').textContent=v);
+  [['endlogo',0],['savear',.25],['savetr',.45],['saveref',.6],['endtx',.8],['endh',.9]].forEach(([id,dl])=>{
+    const k=ease((t-endStart-dl)/.7);$(id).style.opacity=k;$(id).style.transform=`translateY(${(1-k)*22}px)`});
   $('bar').firstChild.style.width=(100*clamp(t/D,0,1))+'%';$('bar').style.opacity=1-e;
 };
 Promise.all([document.fonts.load('600 40px Serif'),document.fonts.load('italic 600 40px Serif'),document.fonts.load('700 40px MLS'),
  document.fonts.load('700 40px Amiri'),document.fonts.load('700 40px Inter'),document.fonts.ready,
- ...[...document.images].map(i=>i.complete?1:new Promise(r=>i.onload=r))]).then(()=>window.READY=true);
+ ...[...document.images].filter(i=>i.src).map(i=>i.complete?1:new Promise(r=>i.onload=r))]).then(()=>window.READY=true);
 </script></body></html>

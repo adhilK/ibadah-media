@@ -28,17 +28,19 @@ Check `log.json` so no topic or source repeats within 60 days. Lean towards what
 
 ## 3. Script format (`scripts/YYYY-MM-DD-en.json`, `-ml.json`)
 ```json
-{"lang":"en","handle":"@ibadah.daily","offset":0.6,"gap":0.35,"tail":3.0,
- "endcard":"Follow for one authentic reminder every day",
+{"lang":"en","handle":"@ibadah.daily","offset":0.6,"gap":0.35,"tail":5.0,
+ "endcard":"Save this for the hard days",
+ "save":{"ar":"key Arabic, one line per verse","tr":"“translation”","ref":"Qur'an 94 : 5–6"},
  "lines":[{"say":"Hook question that names the viewer's feeling."},
           {"say":"...","scene":"v1","cap":"optional shorter on-screen text"}],
  "scenes":{"v1":{"ar":"Arabic text","tr":"“Exact translation”","ref":"Qur'an 94 : 5"}}}
 ```
 - 30–45 s, 7–9 lines. Line 1 is the hook (shown big over the arch corridor). Lines with `scene` show the verse/hadith card (over the night dunes). Remaining lines play over the lanterns.
 - Hook: the viewer's feeling or a striking question; never open with the page name.
-- Last spoken line is the call to action (share/save). The end card shows `endcard` + handle.
+- Last spoken line is the call to action (share/save). The reel ends on a 5-second **save card** (gold logo, the `save` verse/hadith, its reference, `endcard` line, handle) designed to be screenshotted and saved; `tail` must be 5.0.
+- Brand: deep green + gold only. The gold logo lockups in brand/ (logo-daily-gold.png, logo-malayalam-gold.png) are added automatically.
 - For a hadith, `ar` = the key Arabic phrase (short), `tr` = translation, `ref` e.g. "Sahih al-Bukhari 6018".
-- Malayalam handle `@ibadah.malayalam`, endcard "ദിവസവും ഒരു ആധികാരിക ഓർമപ്പെടുത്തലിന് ഫോളോ ചെയ്യൂ".
+- Malayalam handle `@ibadah.malayalam`; endcard is a short save/share line in Malayalam.
 
 ## 4. Build
 ```

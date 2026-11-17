@@ -47,6 +47,11 @@
    "ref": "Qur'an 94 : 6"
   }
  },
- "endcard": "Follow for one authentic reminder every day",
- "tail": 3.0
+ "endcard": "Save this for the hard days",
+ "tail": 5.0,
+ "save": {
+  "ar": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا\nإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+  "tr": "“For indeed, with hardship will be ease.”",
+  "ref": "Qur'an 94 : 5–6"
+ }
 }
