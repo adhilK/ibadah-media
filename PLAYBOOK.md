@@ -62,5 +62,12 @@ QA before upload: view frames at every caption, verse card and the end card; no 
 
 Caption: write hashtags with a plain `#` — never `%23` (Composio's schema hint is wrong; `%23` shows up literally). Hook line · source line(s) · one short reflection · CTA (save/share) · 4–6 hashtags (mix of #islamicreminder #quran #hadith #sunnah #dua and, for Malayalam, #malayalamislamic #ഇസ്ലാം).
 
+## 5b. YouTube Shorts (same day, same approval)
+Both reels also go to the YouTube channel **Ibadah Daily** (@ibadahdailyquran, channel UCIWN0KrGc8N2V12ob3Ml80Q, Composio account `youtube_gunsel-anyway`). English and Malayalam Shorts share this one channel.
+1. In COMPOSIO_REMOTE_WORKBENCH: download each MP4 from its raw.githubusercontent URL to /home/user, then `upload_local_file(path)` to get an `s3key`.
+2. `YOUTUBE_MULTIPART_UPLOAD_VIDEO` once per video (never re-run on success — it would duplicate): title ≤ 100 chars ending with `#Shorts` (Malayalam titles include "| Malayalam"), description = the Instagram caption plus "One authentic reminder every day — every source cited." and `#Shorts`, 5–9 tags, categoryId "27", privacyStatus "public", videoFile {name, mimetype "video/mp4", s3key}.
+3. Save the returned video ids in log.json (`yt_en_id`, `yt_ml_id`). Shorts URL: https://youtube.com/shorts/<id>.
+4. For learning, pull Shorts stats with `YOUTUBE_GET_VIDEO_DETAILS_BATCH` (parts snippet,statistics) alongside the Instagram insights.
+
 ## 6. Learn and improve
 Every run, first pull the last 14 days of reels for both accounts (Composio `INSTAGRAM_GET_IG_USER_MEDIA` with `insights.metric(views,reach,saved,shares,total_interactions,ig_reels_avg_watch_time)`), and append them to `log.json`. Compare hooks, topic types, length and posting time. Write one line in `log.json` → `learnings` on what to try next, and apply it to today's script. Change one variable at a time.
