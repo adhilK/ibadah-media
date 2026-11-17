@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Amiri;font-weight:700;src:url(../fonts/fontsource-amiri-5.3.0/files/amiri-arabic-700-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url(../fonts/fontsource-inter-5.3.0/files/inter-latin-700-normal.woff2)}
+@font-face{font-family:Serif;font-weight:600;src:url(../fonts/fontsource-playfair-display/files/playfair-display-latin-600-normal.woff2)}
+@font-face{font-family:Serif;font-weight:600;font-style:italic;src:url(../fonts/fontsource-playfair-display/files/playfair-display-latin-600-italic.woff2)}
+@font-face{font-family:MLS;font-weight:700;src:url(../fonts/fontsource-noto-serif-malayalam-5.3.0/files/noto-serif-malayalam-malayalam-700-normal.woff2)}
+@font-face{font-family:ML;font-weight:700;src:url(../fonts/fontsource-noto-sans-malayalam-5.3.0/files/noto-sans-malayalam-malayalam-700-normal.woff2)}
+:root{--gold:#d8b46a;--gold2:#f3dca0;--cream:#f7f0de}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09}
+#stage{position:absolute;inset:0;overflow:hidden}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;filter:blur(1.2px)}
+#shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,12,9,.55) 0%,rgba(2,12,9,0) 22%,rgba(2,12,9,0) 55%,rgba(2,12,9,.72) 100%)}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;opacity:.08;mix-blend-mode:overlay}
+.abs{position:absolute}
+.txt{text-wrap:balance;position:absolute;left:96px;right:96px;text-align:center;color:var(--cream);text-shadow:0 4px 30px rgba(0,0,0,.6)}
+#top{top:205px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:14px;
+  font-family:Inter;font-weight:700;font-size:26px;letter-spacing:7px;color:rgba(247,240,222,.8);text-transform:uppercase}
+#top img{width:40px;height:40px}
+#hook{top:380px;height:560px;display:flex;align-items:center;justify-content:center}
+#hook div{font-family:Serif;font-weight:600;line-height:1.16}
+#cap{top:1210px;height:300px;display:flex;align-items:center;justify-content:center}
+#cap.mid{top:1170px}
+#cap div{font-family:Serif;font-weight:600;line-height:1.2}
+#card{left:80px;width:920px;top:300px;height:880px}
+#glass{position:absolute;inset:0;clip-path:path('M30,880 L30,330 C30,190 215,88 460,14 C705,88 890,190 890,330 L890,880 Z');
+  background:linear-gradient(180deg,rgba(6,34,26,.55),rgba(3,18,14,.8));backdrop-filter:blur(14px)}
+#arch{position:absolute;inset:0;width:920px;height:880px;overflow:visible;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
+#ar{position:absolute;top:250px;left:90px;right:90px;height:260px;display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:Amiri;font-weight:700;direction:rtl;line-height:1.7;
+  background:linear-gradient(#fbe9b8,#d8b46a 60%,#b08840);-webkit-background-clip:text;color:transparent}
+#orn{position:absolute;top:540px;left:0;right:0;text-align:center;color:var(--gold);font-size:22px;letter-spacing:22px}
+#tr{text-wrap:balance;position:absolute;top:585px;left:100px;right:100px;height:190px;display:flex;align-items:center;justify-content:center;text-align:center;
+  color:var(--cream);font-family:Serif;font-style:italic;font-weight:600;line-height:1.38}
+#ref{position:absolute;top:800px;left:0;right:0;text-align:center}
+#ref span{display:inline-block;padding:12px 30px;border:1.5px solid rgba(216,180,106,.75);border-radius:40px;background:rgba(2,12,9,.75);
+  font-family:Inter,ML;font-weight:700;font-size:26px;letter-spacing:5px;color:var(--gold2);text-transform:uppercase}
+#end{inset:0}
+#end img{position:absolute;left:315px;top:420px;width:450px}
+#endar{top:620px;font-family:Amiri;font-weight:700;font-size:78px;
+  background:linear-gradient(#fbe9b8,#d8b46a 60%,#b08840);-webkit-background-clip:text;color:transparent;text-shadow:none}
+#endtx{top:1000px;height:180px;display:flex;align-items:center;justify-content:center}
+#endtx div{font-family:Serif;font-weight:600;line-height:1.3}
+#endh{top:1200px;font-family:Inter;font-weight:700;font-size:34px;letter-spacing:4px;color:var(--gold2)}
+#bar{left:96px;right:96px;bottom:310px;height:3px;border-radius:2px;background:rgba(247,240,222,.14)}
+#bar i{display:block;height:100%;border-radius:2px;background:linear-gradient(90deg,#b08840,#fbe9b8)}
+.lang-ml #hook div,.lang-ml #cap div,.lang-ml #endtx div{font-family:MLS;line-height:1.5}
+.lang-ml #tr{font-family:MLS;font-style:normal;line-height:1.55}
+</style></head>
+<body><div id="stage">
+<canvas id="gl" width="540" height="960"></canvas>
+<div id="shade"></div>
+<div id="top" class="abs"><img src="../brand/logo.svg"><span id="topname"></span></div>
+<div id="hook" class="txt"><div></div></div>
+<div id="card" class="abs">
+ 
+ <svg id="arch" viewBox="0 0 920 880"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbe9b8"/><stop offset="1" stop-color="#9c7735"/></linearGradient></defs>
+ <path id="glassP" fill="rgba(3,20,15,.72)" d="M30,880 L30,330 C30,190 215,88 460,14 C705,88 890,190 890,330 L890,880 Z"/>
+ <path id="archA" fill="none" stroke="url(#ag)" stroke-width="4" d="M30,880 L30,330 C30,190 215,88 460,14 C705,88 890,190 890,330 L890,880"/>
+ <path id="archB" fill="none" stroke="url(#ag)" stroke-width="1.6" opacity=".55" d="M58,880 L58,338 C58,212 230,120 460,50 C690,120 862,212 862,338 L862,880"/>
+ <g id="star" transform="translate(460 14)" fill="url(#ag)"><rect x="-17" y="-17" width="34" height="34"/><rect x="-17" y="-17" width="34" height="34" transform="rotate(45)"/><circle r="8" fill="#06221a"/></g>
+ </svg>
+ <div id="ar"></div><div id="orn">◆ ◆ ◆</div><div id="tr"></div><div id="ref"><span></span></div>
+</div>
+<div id="cap" class="txt"><div></div></div>
+<div id="end" class="abs"><img src="../brand/logo.svg"><div id="endar" class="txt">عبادة</div><div id="endtx" class="txt"><div></div></div><div id="endh" class="txt"></div></div>
+<div id="bar" class="abs"><i></i></div>
+<canvas id="grain" width="360" height="640"></canvas>
+</div>
+<script id="fs" type="x-shader">
+precision highp float;
+uniform vec2 R; uniform float T; uniform int SA; uniform int SB; uniform float MX;
+float h1(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n2(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+ return mix(mix(h1(i),h1(i+vec2(1,0)),f.x),mix(h1(i+vec2(0,1)),h1(i+vec2(1,1)),f.x),f.y);}
+float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*n2(p);p*=2.03;a*=.5;}return v;}
+const vec3 GOLD=vec3(.95,.80,.50);
+float stars(vec2 uv,float s){vec2 g=floor(uv*s),f=fract(uv*s)-.5;float r=h1(g);
+ float tw=.6+.4*sin(T*1.7+r*40.);return r>.965?smoothstep(.09,0.,length(f))*tw*(r-.965)*28.:0.;}
+vec3 dunes(vec2 uv){
+ float asp=R.x/R.y; vec2 p=vec2((uv.x-.5)*asp,uv.y); float cam=T*.018;
+ vec3 sky=mix(vec3(.10,.17,.16),vec3(.010,.035,.035),smoothstep(.35,1.,uv.y));
+ sky+=vec3(.35,.24,.12)*exp(-pow((uv.y-.36)*6.,2.))*.55;
+ sky+=stars(p+vec2(cam*.2,0.),70.)*vec3(1.,.95,.85)+stars(p*1.7+3.,110.)*.6;
+ vec2 m=p-vec2(.2,.80);float d1=length(m),d2=length(m-vec2(.035,.022));
+ sky+=GOLD*1.25*smoothstep(.066,.062,d1)*smoothstep(.058,.062,d2)+GOLD*.10*exp(-d1*9.);
+ vec3 col=sky;
+ for(int i=0;i<5;i++){float fi=float(i);
+  float base=.36-fi*.065, amp=.05+fi*.022, fr=1.2+fi*.55;
+  float x=p.x*fr+cam*(1.+fi*1.6)+fi*7.3;
+  float hgt=base+amp*(fbm(vec2(x,fi))-.5)*2.2+.02*sin(x*1.3);
+  if(uv.y<hgt){
+   float depth=1.-fi/4.;
+   vec3 c=mix(vec3(.16,.13,.09),vec3(.02,.03,.025),fi/4.);
+   c+=GOLD*exp(-(hgt-uv.y)*90./(1.+fi))*(.22+.1*depth);
+   c*=.9+.1*(sin((p.x*40.+uv.y*260.)*(1.+fi*.3)+fbm(p*8.)*6.)*.5+.5);
+   col=mix(c,vec3(.10,.15,.14),depth*.55);
+  }
+ }
+ return col;
+}
+float archIn(vec2 p,float w,float h){
+ if(p.y<0.) return (abs(p.x)<w && p.y>-h)?1.:0.;
+ return (length(p-vec2(-w,0.))<2.*w && length(p-vec2(w,0.))<2.*w)?1.:0.;}
+vec3 arches(vec2 uv){
+ vec2 p=(uv-vec2(.5,.40))*vec2(R.x/R.y,1.); float sp=T*.11;
+ for(int j=0;j<14;j++){
+  float z=float(j)+1.-fract(sp), s=1./(z*.42); vec2 q=p/s; float lit=exp(-z*.11);
+  if(archIn(q,.30,.9)<.5){
+   float stone=.55+.45*fbm(q*6.+float(j)+floor(sp));
+   float toL=exp(-length(p-vec2(0.,-.05))*2.2);
+   vec3 c=vec3(.30,.24,.15)*stone*(.45+1.4*toL) + GOLD*(.9*toL+.25)*archIn(q*1.06,.30,.9)*lit;
+   vec3 col=c*(.30+.70*lit);
+   return col+vec3(.0,.02,.015);
+  }
+ }
+ float r=length(p-vec2(0.,-.05));
+ float rays=.5+.5*sin(atan(p.y+.05,p.x)*14.+T*.2);
+ return GOLD*(1.4*exp(-r*7.)+.35*exp(-r*2.)*(.7+.3*rays))+vec3(.05,.08,.07);
+}
+vec3 lanterns(vec2 uv){
+ float asp=R.x/R.y; vec2 p=(uv-.5)*vec2(asp,1.);
+ vec3 col=mix(vec3(.035,.08,.065),vec3(.005,.02,.016),uv.y);
+ for(int i=0;i<26;i++){float fi=float(i);
+  vec2 c=vec2((h1(vec2(fi,1.))-.5)*asp*1.1, fract(h1(vec2(fi,2.))+T*(.006+.01*h1(vec2(fi,3.))))*1.2-.6);
+  c.x+=.02*sin(T*.3+fi);
+  float rad=.03+.07*h1(vec2(fi,4.)), d=length(p-c);
+  col+=mix(GOLD,vec3(.9,.6,.3),h1(vec2(fi,6.)))*smoothstep(rad,rad*.8,d)*(.05+.05*h1(vec2(fi,5.)));
+ }
+ for(int i=0;i<3;i++){float fi=float(i);
+  float sc=1.-abs(fi-1.)*.28;
+  vec2 c=vec2(-.21+fi*.21, .16-abs(fi-1.)*.11+.01*sin(T*.6+fi*2.));
+  vec2 q=(p-c)/sc; float sw=.05*sin(T*.45+fi*1.7); q=vec2(q.x*cos(sw)-q.y*sin(sw),q.x*sin(sw)+q.y*cos(sw));
+  float y=q.y;
+  // body (glass) tapered panel
+  float w=.040-.010*pow(abs(y+.002)/.055,2.);
+  float body=max(abs(q.x)-w, abs(y+.002)-.055);
+  // dome, finial, base cone, chain
+  float dome=max(length(q-vec2(0.,.053))-.036,-(y-.053));
+  float fin=length(q-vec2(0.,.096))-.007;
+  float base=max(abs(q.x)-(.03-(-.057-y)*1.2),max(y+.057-.0,-(y+.085)));
+  base=max(abs(q.x)-max(0.,.032+(y+.057)*1.1),max(y+.057,-(y+.088)));
+  float chain=max(abs(q.x)-.0018,-(y-.1));
+  float metal=min(min(dome,fin),min(base,chain));
+  // glass glow with frame bars
+  float bars=smoothstep(.0035,.0015,abs(fract((q.x/w*.5+.5)*3.)-.5)*w*.66);
+  float bands=smoothstep(.003,.001,abs(abs(y+.002)-.035));
+  float inside=smoothstep(.001,-.001,body);
+  vec3 glass=GOLD*(1.55-1.1*length(vec2(q.x/w,(y+.002)/.055))*.5)*(1.-.7*max(bars,bands));
+  col=mix(col,glass,inside);
+  col+=GOLD*.55*exp(-max(body,0.)*30./sc)*(1.-inside);
+  float mIn=smoothstep(.0012,-.0012,metal);
+  vec3 bronze=vec3(.20,.14,.07)+GOLD*.35*smoothstep(-.012,0.,metal)*(q.x<0.?1.:.4);
+  col=mix(col,bronze,mIn);
+ }
+ return col;
+}
+vec3 scene(int s,vec2 uv){if(s==0)return dunes(uv);if(s==1)return arches(uv);return lanterns(uv);}
+void main(){vec2 uv=gl_FragCoord.xy/R;
+ vec3 c=mix(scene(SA,uv),scene(SB,uv),MX);
+ float v=length((uv-.5)*vec2(.9,1.));c*=1.-smoothstep(.35,.85,v)*.7;
+ c=c/(1.+c*.35);gl_FragColor=vec4(c,1.);}
+</script>
+<script>
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x,0,1);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const fade=(t,s,e,d=.6)=>Math.min(ease((t-s)/d),ease((e-t)/d));
+function rng(seed){return()=>{seed=(seed*16807)%2147483647;return(seed-1)/2147483646}}
+const $=id=>document.getElementById(id);
+const cv=$('gl'),gl=cv.getContext('webgl',{preserveDrawingBuffer:true});
+function sh(t,s){const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))window.SHERR=gl.getShaderInfoLog(o);return o}
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,'attribute vec2 a;void main(){gl_Position=vec4(a,0,1);}'));
+gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,$('fs').textContent));gl.linkProgram(pr);gl.useProgram(pr);
+gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);
+const U=n=>gl.getUniformLocation(pr,n);
+function fit(el,max,min,maxW,maxH){let s=max;el.style.fontSize=s+'px';
+  while(s>min&&(el.scrollWidth>maxW||el.scrollHeight>maxH)){s-=2;el.style.fontSize=s+'px'}}
+const last={};function once(k,v,fn){if(last[k]!==v){fn(v);last[k]=v}}
+function chunks(TL){const out=[],lim=TL.lang==='ml'?24:24;
+  TL.caps.forEach((c,ci)=>{if(ci===0)return;
+    const words=c.text.split(/\s+/),parts=[];let cur='';
+    for(const w of words){if(cur&&(cur+' '+w).length>lim){parts.push(cur);cur=w}else cur=cur?cur+' '+w:w;
+      if(/[.,:;?!]$/.test(w)&&cur.length>10){parts.push(cur);cur=''}}
+    if(cur)parts.push(cur);
+    if(parts.length>1&&parts[parts.length-1].length<8){const l=parts.pop();parts[parts.length-1]+=' '+l}
+    const tot=parts.reduce((a,p)=>a+p.length,0),span=c.end-c.start;let st=c.start;
+    parts.forEach(p=>{const d=span*p.length/tot;out.push({start:st,end:st+d,text:p});st+=d})});
+  return out}
+let CH=null;
+window.renderAt=function(t){
+  const TL=window.TL,D=TL.duration,ml=TL.lang==='ml';document.body.className='lang-'+TL.lang;if(!CH)CH=chunks(TL);
+  const bg=TL.bg;let i=0;while(i+1<bg.length&&t>=bg[i+1].start)i++;
+  const cur=bg[i],prev=bg[Math.max(0,i-1)],mx=i>0?ease((t-cur.start)/1.4):1;
+  gl.viewport(0,0,540,960);gl.uniform2f(U('R'),540,960);gl.uniform1f(U('T'),t+(TL.seed||0));
+  gl.uniform1i(U('SA'),prev.scene);gl.uniform1i(U('SB'),cur.scene);gl.uniform1f(U('MX'),mx);gl.drawArrays(gl.TRIANGLES,0,3);
+  cv.style.transform=`scale(${1.05+.035*Math.sin(t*.08)})`;
+  const g=$('grain').getContext('2d'),img=g.createImageData(360,640),gr=rng(1+Math.floor(t*30));
+  for(let k=0;k<img.data.length;k+=4){const v=gr()*255;img.data[k]=img.data[k+1]=img.data[k+2]=v;img.data[k+3]=255}g.putImageData(img,0,0);
+  once('top',TL.handle.replace('@',''),v=>$('topname').textContent=v);
+  const caps=TL.caps,endStart=caps[caps.length-1].end;
+  const h=caps[0],hk=fade(t,Math.max(0,h.start-.35),h.end+.1,.5),hd=$('hook').firstChild;
+  once('hook',h.text,v=>{hd.textContent=v;fit(hd,ml?82:104,40,888,900)});
+  hd.style.opacity=hk;hd.style.transform=`translateY(${(1-hk)*30}px)`;hd.style.filter=`blur(${(1-hk)*8}px)`;
+  const S=TL.scenes,span=S.length?[S[0].start,S[S.length-1].end]:[-9,-9],inS=t>=span[0]-.2&&t<span[1]+.2;
+  const ca=fade(t,span[0],span[1],.8);$('card').style.opacity=ca;$('card').style.transform=`translateY(${(1-ca)*40}px)`;
+  const draw=ease((t-span[0])/1.8);
+  for(const id of['archA','archB']){const L=$(id).getTotalLength();$(id).style.strokeDasharray=L;$(id).style.strokeDashoffset=L*(1-draw)}
+  $('glassP').style.opacity=ease((t-span[0])/1.2);$('star').style.opacity=ease((t-span[0]-1.2)/.6);
+  const s=S.find(x=>t>=x.start&&t<x.end);
+  if(s){once('ar',s.ar,v=>{$('ar').textContent=v;fit($('ar'),108,50,740,260)});
+        once('tr',s.tr,v=>{$('tr').textContent=v;fit($('tr'),ml?44:56,24,720,190)});
+        once('ref',s.ref,v=>$('ref').firstChild.textContent=v)}
+  const sa=s?Math.min(ease((t-s.start)/.5),ease((s.end-t)/.3)):0;
+  for(const id of['ar','tr','ref','orn']){$(id).style.opacity=sa;$(id).style.transform=`translateY(${(1-sa)*18}px)`}
+  const x=CH.find(c=>t>=c.start&&t<c.end),cd=$('cap').firstChild;$('cap').className='txt'+(inS?'':' mid');
+  if(x){once('cap',x.text,v=>{cd.textContent=v;fit(cd,ml?64:78,34,888,290)});
+    const k=Math.min(ease((t-x.start)/.3),ease((x.end-t)/.2));
+    cd.style.opacity=k;cd.style.transform=`translateY(${(1-k)*14}px)`;cd.style.filter=`blur(${(1-k)*6}px)`}
+  else cd.style.opacity=0;
+  const e=ease((t-endStart-.1)/1.),E=$('end');E.style.opacity=e;$('top').style.opacity=1-e;
+  E.querySelector('img').style.transform=`translateY(${(1-e)*30}px)`;
+  once('endtx',TL.endcard||'',v=>{const d=$('endtx').firstChild;d.textContent=v;fit(d,ml?48:56,28,888,180)});
+  once('endh',TL.handle,v=>$('endh').textContent=v);
+  $('bar').firstChild.style.width=(100*clamp(t/D,0,1))+'%';$('bar').style.opacity=1-e;
+};
+Promise.all([document.fonts.load('600 40px Serif'),document.fonts.load('italic 600 40px Serif'),document.fonts.load('700 40px MLS'),
+ document.fonts.load('700 40px Amiri'),document.fonts.load('700 40px Inter'),document.fonts.ready,
+ ...[...document.images].map(i=>i.complete?1:new Promise(r=>i.onload=r))]).then(()=>window.READY=true);
+</script></body></html>

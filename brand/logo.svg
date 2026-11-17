@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3dca0"/>
+      <stop offset=".55" stop-color="#d8b46a"/>
+      <stop offset="1" stop-color="#a9823e"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#g)" stroke-linejoin="round">
+    <!-- mihrab arch, double line -->
+    <path stroke-width="16" d="M250,860 L250,470 C250,330 360,235 500,175 C640,235 750,330 750,470 L750,860"/>
+    <path stroke-width="6" opacity=".7" d="M290,860 L290,480 C290,360 385,275 500,220 C615,275 710,360 710,480 L710,860"/>
+    <!-- base -->
+    <path stroke-width="10" d="M200,860 L800,860"/>
+  </g>
+  <!-- 8-point star at apex -->
+  <g transform="translate(500 112)" fill="url(#g)">
+    <rect x="-34" y="-34" width="68" height="68"/>
+    <rect x="-34" y="-34" width="68" height="68" transform="rotate(45)"/>
+    <circle r="16" fill="#0b3a2e"/>
+  </g>
+</svg>

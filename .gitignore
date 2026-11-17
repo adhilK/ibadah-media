@@ -1,0 +1,6 @@
+cache/
+*.wav
+frames/
+seg/
+prev_*.jpg
+.env

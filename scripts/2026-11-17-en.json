@@ -1,0 +1,52 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "lines": [
+  {
+   "say": "Feeling crushed by what you're carrying right now?"
+  },
+  {
+   "say": "Allah already answered this, before you even asked."
+  },
+  {
+   "say": "In Surah Ash-Sharh, He says: For indeed, with hardship comes ease.",
+   "scene": "v5",
+   "cap": "In Surah Ash-Sharh, He says…"
+  },
+  {
+   "say": "Then He says it again. Indeed, with hardship comes ease.",
+   "scene": "v6",
+   "cap": "Then He says it again."
+  },
+  {
+   "say": "Ibn Kathir explains: Allah tells us this, then repeats it to make it certain."
+  },
+  {
+   "say": "And notice the word. Not after hardship. With it."
+  },
+  {
+   "say": "So hold on. Keep making dua. Your ease is promised.",
+   "pause": 0.3
+  },
+  {
+   "say": "Share this with someone who needs it today.",
+   "cap": "Share this with someone who needs it today 🤍"
+  }
+ ],
+ "scenes": {
+  "v5": {
+   "ar": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+   "tr": "“For indeed, with hardship will be ease.”",
+   "ref": "Qur'an 94 : 5"
+  },
+  "v6": {
+   "ar": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+   "tr": "“Indeed, with hardship will be ease.”",
+   "ref": "Qur'an 94 : 6"
+  }
+ },
+ "endcard": "Follow for one authentic reminder every day",
+ "tail": 3.0
+}

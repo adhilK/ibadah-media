@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Amiri;font-weight:700;src:url(../fonts/fontsource-amiri-5.3.0/files/amiri-arabic-700-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url(../fonts/fontsource-inter-5.3.0/files/inter-latin-700-normal.woff2)}
+@font-face{font-family:ML;font-weight:700;src:url(../fonts/fontsource-noto-sans-malayalam-5.3.0/files/noto-sans-malayalam-malayalam-700-normal.woff2)}
+html,body{margin:0;width:1080px;height:1080px}
+#s{position:absolute;inset:0;overflow:hidden;
+ background:radial-gradient(circle at 50% 40%,#13563f 0%,#0a3326 45%,#041a13 100%)}
+#pat{position:absolute;inset:0;opacity:.07}
+#logo{position:absolute;left:90px;top:40px;width:900px;height:900px}
+#ar{position:absolute;top:425px;width:100%;text-align:center;font-family:Amiri;font-weight:700;font-size:180px;line-height:1;
+ background:linear-gradient(#f6e3ad,#d8b46a 60%,#b38c45);-webkit-background-clip:text;color:transparent;
+ filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}
+#sub{position:absolute;top:880px;width:100%;text-align:center;font-family:Inter,ML;font-weight:700;font-size:58px;letter-spacing:14px;color:#f4ecd8}
+.ml #sub{letter-spacing:3px;font-size:62px}
+</style></head><body><div id="s">
+<svg id="pat" width="1080" height="1080"><defs><pattern id="p" width="135" height="135" patternUnits="userSpaceOnUse"><g fill="none" stroke="#d8b46a" stroke-width="2"><polygon points="67.5,15 82,52 120,67.5 82,83 67.5,120 53,83 15,67.5 53,52"/><circle cx="67.5" cy="67.5" r="12"/></g></pattern></defs><rect width="100%" height="100%" fill="url(#p)"/></svg>
+<img id="logo" src="logo.svg"><div id="ar">عبادة</div><div id="sub"></div></div>
+<script>window.setSub=(t,ml)=>{document.getElementById('sub').textContent=t;document.body.className=ml?'ml':''};
+Promise.all([document.fonts.ready,new Promise(r=>{const i=document.getElementById('logo');i.complete?r():i.onload=r})]).then(()=>window.READY=true)</script></body></html>
