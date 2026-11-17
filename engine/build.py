@@ -56,6 +56,8 @@ def dur(path):
 
 def main(d):
     d = Path(d)
+    if os.environ.get("RESUME") and (d / "timeline.json").exists() and (d / "vo.wav").exists():
+        return render(d, json.loads((d / "timeline.json").read_text()))
     S = json.loads((d / "script.json").read_text())
     lang = S["lang"]
     voice = {**VOICES[lang], **S.get("voice", {})}
@@ -104,7 +106,12 @@ def main(d):
 
 def render(d, TL):
     from playwright.sync_api import sync_playwright
-    frames = d / "frames"; shutil.rmtree(frames, ignore_errors=True); frames.mkdir()
+    frames = d / "frames"
+    resume = bool(os.environ.get("RESUME")) and frames.exists()
+    if not resume:
+        shutil.rmtree(frames, ignore_errors=True); frames.mkdir()
+    done = sorted(frames.glob("*.jpg"))
+    start = max(0, len(done) - 2) if resume else 0
     N = int(TL["duration"] * FPS)
     with sync_playwright() as p:
         b = p.chromium.launch(args=["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"])
@@ -118,7 +125,7 @@ def render(d, TL):
             for ts in os.environ["PREVIEW"].split(","):
                 pg.evaluate(f"renderAt({ts})"); pg.screenshot(path=str(d / f"prev_{ts}.jpg"), type="jpeg", quality=85)
             b.close(); print("preview done"); return
-        for i in range(N):
+        for i in range(start, N):
             pg.evaluate(f"renderAt({i / FPS})")
             pg.screenshot(path=str(frames / f"{i:05d}.jpg"), type="jpeg", quality=92)
             if i % 150 == 0:

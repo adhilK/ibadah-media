@@ -230,7 +230,7 @@ window.renderAt=function(t){
     const k=Math.min(ease((t-x.start)/.3),ease((x.end-t)/.2));
     cd.style.opacity=k;cd.style.transform=`translateY(${(1-k)*14}px)`;cd.style.filter=`blur(${(1-k)*6}px)`}
   else cd.style.opacity=0;
-  const e=ease((t-endStart-.1)/.9),E=$('end');E.style.opacity=e;$('top').style.opacity=(1-e)*(1-ca);
+  const e=ease((t-endStart-.1)/.9),E=$('end');E.style.opacity=e;$('top').style.opacity=(1-e)*Math.pow(1-ca,4);
   const sv=TL.save||S[0]||{ar:'',tr:'',ref:''};
   once('endlogo',TL.logo,v=>$('endlogo').src=v);
   once('savear',sv.ar,v=>{$('savear').textContent=v;fit($('savear'),84,40,888,340)});
