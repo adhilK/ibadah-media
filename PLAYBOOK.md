@@ -50,6 +50,7 @@ mkdir -p work/en work/ml && cp scripts/DATE-en.json work/en/script.json && cp sc
 PREVIEW=1.5,10,20,30 python3 engine/build.py work/en   # look at prev_*.jpg first
 python3 engine/build.py work/en && python3 engine/build.py work/ml
 ```
+A full render takes ~20 min and background jobs can be killed. Run each render in the foreground as `RESUME=1 timeout 580 python3 engine/build.py work/en` and repeat the same command until it prints `wrote`; RESUME keeps finished frames and the voiceover. (Run the first pass without RESUME so the voiceover is generated.)
 Voices: Google Chirp 3 HD `Charon` (en-US / ml-IN) only — free tier covers this volume. Never use Gemini-TTS or Studio voices (not free).
 QA before upload: view frames at every caption, verse card and the end card; no text may overflow or overlap.
 
