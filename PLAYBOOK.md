@@ -54,6 +54,8 @@ A full render takes ~20 min and background jobs can be killed. Run each render i
 Voices: Google Chirp 3 HD `Charon` (en-US / ml-IN) only — free tier covers this volume. Never use Gemini-TTS or Studio voices (not free).
 QA before upload: view frames at every caption, verse card and the end card; no text may overflow or overlap.
 
+**Motion variety (Adhil, 2026-11-18):** the videos should not look the same every day. Each run, add or rotate in at least one new animation in `engine/reel.html` (keep it if it works, note it in log.json), e.g. word-by-word / karaoke caption reveal, slow Ken Burns push or parallax on the scenes, Arabic text drawn in with a gold glow or shimmer, verse card sliding/unfolding open, drifting stars or dust particles, light rays through the arch, lanterns swaying, smooth cross-dissolve or wipe transitions between scenes, a progress line that glows. Stay within the brand (deep green + gold), keep text legible, and never add people, faces, animals or music. Check motion in several preview frames close together (e.g. PREVIEW=7.6,7.8,8.0) before the full render.
+
 ## 5. Publish
 1. Copy MP4s to `reels/DATE/ibadah-daily.mp4` and `reels/DATE/ibadah-malayalam.mp4`, commit and push.
 2. Public URL: `https://raw.githubusercontent.com/adhilK/ibadah-media/main/reels/DATE/<file>.mp4`

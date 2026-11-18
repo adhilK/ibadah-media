@@ -45,7 +45,15 @@
     "en": 40.6,
     "ml": 43.9
    },
-   "status": "awaiting approval (approval period until 2026-12-01)"
+   "status": "published after Adhil's approval",
+   "en_media_id": "18121114199088089",
+   "ml_media_id": "18106730984200936",
+   "en_url": "https://www.instagram.com/reel/Df340LLDliQ/",
+   "ml_url": "https://www.instagram.com/reel/Df34159FfeF/",
+   "posted_utc": "2026-11-18T06:43",
+   "yt_en_id": "P7WnXWWnjKs",
+   "yt_ml_id": "kzI18OlsZaA",
+   "metrics": {}
   }
  ],
  "learnings": [
@@ -60,6 +68,10 @@
   {
    "date": "2026-11-18",
    "note": "Day 1 EN: 112 reach but avg watch only 5.4s of ~35s and 0 saves; ML held 17.5s. Viewers leave during the hook. Today change one variable: EN hook states the payoff immediately (claim, not a feeling question). Compare EN avg watch time tomorrow."
+  },
+  {
+   "date": "2026-11-18",
+   "note": "Adhil asked for more varied animations in future videos; see PLAYBOOK §4 'Motion variety'."
   }
  ]
 }
