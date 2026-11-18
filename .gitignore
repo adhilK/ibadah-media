@@ -4,3 +4,4 @@ frames/
 seg/
 prev_*.jpg
 .env
+work/
