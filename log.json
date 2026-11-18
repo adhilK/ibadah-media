@@ -12,14 +12,14 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-18T15:22Z",
     "en": {
-     "views": 124,
-     "reach": 112,
+     "views": 127,
+     "reach": 114,
      "saved": 0,
      "shares": 3,
      "total_interactions": 7,
-     "avg_watch_ms": 5359
+     "avg_watch_ms": 5271
     },
     "ml": {
      "views": 4,
@@ -29,7 +29,16 @@
      "total_interactions": 2,
      "avg_watch_ms": 17509
     },
-    "yt": "not available: YouTube Data API quota exceeded on 2026-11-18"
+    "yt_en": {
+     "views": 11,
+     "likes": 0,
+     "comments": 0
+    },
+    "yt_ml": {
+     "views": 1241,
+     "likes": 26,
+     "comments": 1
+    }
    },
    "yt_en_id": "_xzaY7EzZ6Y",
    "yt_ml_id": "zOH3G2-hKfM",
@@ -53,7 +62,36 @@
    "posted_utc": "2026-11-18T06:43",
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
-   "metrics": {}
+   "metrics": {
+    "checked": "2026-11-18T15:22Z",
+    "note": "~8.5h after posting",
+    "en": {
+     "views": 119,
+     "reach": 99,
+     "saved": 1,
+     "shares": 0,
+     "total_interactions": 5,
+     "avg_watch_ms": 3928
+    },
+    "ml": {
+     "views": 0,
+     "reach": 0,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 0,
+     "avg_watch_ms": 0
+    },
+    "yt_en": {
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    },
+    "yt_ml": {
+     "views": 257,
+     "likes": 5,
+     "comments": 0
+    }
+   }
   }
  ],
  "learnings": [
@@ -72,6 +110,10 @@
   {
    "date": "2026-11-18",
    "note": "Adhil asked for more varied animations in future videos; see PLAYBOOK §4 'Motion variety'."
+  },
+  {
+   "date": "2026-11-18",
+   "note": "Afternoon check: the EN payoff-statement hook did not help IG watch time (3.9s vs 5.3s on day 1; first save though). The standout is YouTube Malayalam Shorts: 1,241 views/26 likes (day 1) and 257 views (day 2, same day) vs 11 and 0 for EN Shorts, while IG Malayalam reach is near zero. Next run: keep Malayalam as-is (it's the audience that's watching); for EN test a 2-3s visual-first hook (Arabic verse card on screen from frame 1 with a short spoken line) instead of text over the arch corridor."
   }
  ]
 }
