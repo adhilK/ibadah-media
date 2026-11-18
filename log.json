@@ -11,9 +11,41 @@
    "en_url": "https://www.instagram.com/reel/Df1y6Icid9v/",
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
-   "metrics": {},
+   "metrics": {
+    "checked": "2026-11-18",
+    "en": {
+     "views": 124,
+     "reach": 112,
+     "saved": 0,
+     "shares": 3,
+     "total_interactions": 7,
+     "avg_watch_ms": 5359
+    },
+    "ml": {
+     "views": 4,
+     "reach": 3,
+     "saved": 0,
+     "shares": 2,
+     "total_interactions": 2,
+     "avg_watch_ms": 17509
+    },
+    "yt": "not available: YouTube Data API quota exceeded on 2026-11-18"
+   },
    "yt_en_id": "_xzaY7EzZ6Y",
-   "yt_ml_id": "zOH3G2-hKfM"
+   "yt_ml_id": "zOH3G2-hKfM",
+   "note": "Live captions show literal %23 instead of # (hashtags broken on both IG posts)."
+  },
+  {
+   "date": "2026-11-18",
+   "type": "hadith",
+   "topic": "Every affair of the believer is good (shukr & sabr)",
+   "source": "Sahih Muslim 2999 (Suhaib); text/translation via sunnah.com Riyad as-Salihin 27; listed in Sahih Muslim on dorar.net",
+   "hook": "Good day or bad day. For one kind of person, both are good.",
+   "len_s": {
+    "en": 40.6,
+    "ml": 43.9
+   },
+   "status": "awaiting approval (approval period until 2026-12-01)"
   }
  ],
  "learnings": [
@@ -24,6 +56,10 @@
   {
    "date": "2026-11-17",
    "note": "Hashtags must be plain # in captions; %23 shows up literally."
+  },
+  {
+   "date": "2026-11-18",
+   "note": "Day 1 EN: 112 reach but avg watch only 5.4s of ~35s and 0 saves; ML held 17.5s. Viewers leave during the hook. Today change one variable: EN hook states the payoff immediately (claim, not a feeling question). Compare EN avg watch time tomorrow."
   }
  ]
 }

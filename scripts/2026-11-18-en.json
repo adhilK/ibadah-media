@@ -1,0 +1,65 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "lines": [
+  {
+   "say": "Good day or bad day. For one kind of person, both are good."
+  },
+  {
+   "say": "The Prophet, peace be upon him, said:",
+   "cap": "The Prophet ﷺ said:"
+  },
+  {
+   "say": "How wonderful is the case of a believer; there is good for him in everything.",
+   "scene": "h1",
+   "cap": "How wonderful is the case of a believer…"
+  },
+  {
+   "say": "If prosperity attends him, he expresses gratitude to Allah, and that is good for him.",
+   "scene": "h2",
+   "cap": "In good times: gratitude."
+  },
+  {
+   "say": "And if adversity befalls him, he endures it patiently, and that is better for him.",
+   "scene": "h3",
+   "cap": "In hard times: patience."
+  },
+  {
+   "say": "Gratitude on the good days. Patience on the hard ones."
+  },
+  {
+   "say": "Live like that, and no day of yours is wasted.",
+   "pause": 0.3
+  },
+  {
+   "say": "Save this, and send it to someone who needs it today.",
+   "cap": "Save this & send it to someone who needs it 🤍"
+  }
+ ],
+ "scenes": {
+  "h1": {
+   "ar": "عجبا لأمر المؤمن\nإن أمره كله له خير",
+   "tr": "“How wonderful is the case of a believer; there is good for him in everything.”",
+   "ref": "Sahih Muslim 2999"
+  },
+  "h2": {
+   "ar": "إن أصابته سراء شكر\nفكان خيراً له",
+   "tr": "“If prosperity attends him, he expresses gratitude to Allah and that is good for him.”",
+   "ref": "Sahih Muslim 2999"
+  },
+  "h3": {
+   "ar": "وإن أصابته ضراء صبر\nفكان خيراً له",
+   "tr": "“If adversity befalls him, he endures it patiently and that is better for him.”",
+   "ref": "Sahih Muslim 2999"
+  }
+ },
+ "endcard": "Save this for every kind of day",
+ "tail": 5.0,
+ "save": {
+  "ar": "عجبا لأمر المؤمن\nإن أمره كله له خير",
+  "tr": "“How wonderful is the case of a believer; there is good for him in everything.”",
+  "ref": "Sahih Muslim 2999"
+ }
+}
