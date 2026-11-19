@@ -12,14 +12,14 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-18T15:22Z",
+    "checked": "2026-11-19T04:30Z",
     "en": {
      "views": 127,
      "reach": 114,
      "saved": 0,
      "shares": 3,
      "total_interactions": 7,
-     "avg_watch_ms": 5271
+     "avg_watch_ms": 5365
     },
     "ml": {
      "views": 4,
@@ -63,11 +63,11 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-18T15:22Z",
-    "note": "~8.5h after posting",
+    "checked": "2026-11-19T04:30Z",
+    "note": "~22h after posting (IG); YT stats not refreshed: YouTube Data API quotaExceeded",
     "en": {
      "views": 119,
-     "reach": 99,
+     "reach": 101,
      "saved": 1,
      "shares": 0,
      "total_interactions": 5,
@@ -92,6 +92,23 @@
      "comments": 0
     }
    }
+  },
+  {
+   "date": "2026-11-19",
+   "type": "prophet_story",
+   "topic": "Yunus (AS) in the darknesses: his dua and Allah's answer",
+   "source": "Qur'an 21:87-88 & 37:142 (api.quran.com: Saheeh Intl id 20 incl. footnote on the three darknesses; Malayalam id 37); Tafsir Ibn Kathir on 21:87-88 (quran.com tafsir 169)",
+   "hook": {
+    "en": "Three layers of darkness. One sentence. And Allah answered. (visual-first: verse card from frame 1)",
+    "ml": "മൂന്ന് ഇരുട്ടുകൾ. ഒരൊറ്റ ദുആ. അല്ലാഹു ഉത്തരം നൽകി. (text hook, unchanged format)"
+   },
+   "len_s": {
+    "en": 44.2,
+    "ml": 50.8
+   },
+   "motion": "new: Arabic text revealed right-to-left with a gold shimmer sweep and soft glow; EN verse card on screen from frame 0",
+   "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
+   "note": "Tirmidhi 3505 (dua of Dhun-Nun) left out: sunnah.com/dorar could not be opened this run, so grading unverified."
   }
  ],
  "learnings": [
@@ -118,6 +135,10 @@
   {
    "date": "2026-11-19",
    "note": "Run blocked: Composio in this session only has the @scplksa Instagram account (no instagram_purga-talari / instagram_semic-ratio, no YouTube), so no metrics; and fetches to quran.com, api.quran.com and sunnah.com were refused (permission prompts unanswered in the unattended run), so sources could not be verified and no reel was made. Planned topic for next run: story of the prophets, Yunus's dua (Qur'an 21:87-88). Carry over yesterday's EN test: visual-first hook."
+  },
+  {
+   "date": "2026-11-19",
+   "note": "14-day data (2 posts): IG EN reach ~100-114 per reel but avg watch only 3.9-5.4s; IG ML day-2 reel has 0 views after 22h (day 1: 4) — IG Malayalam distribution looks stuck, worth Adhil checking the account status; YT ML Shorts were the strongest channel (1,241 & 257 views at last check). YT stats could not be refreshed today (YouTube API quotaExceeded). Applied today (one variable, EN only): visual-first hook — Arabic verse card on screen from frame 0 with the hook as a caption under it. Compare EN avg watch time vs 3.9-5.4s."
   }
  ]
 }
