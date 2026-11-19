@@ -106,7 +106,7 @@
     "en": 44.2,
     "ml": 50.8
    },
-   "motion": "new: Arabic text revealed right-to-left with a gold shimmer sweep and soft glow; EN verse card on screen from frame 0",
+   "motion": "Content-specific theme 'yunus' (engine/themes/yunus.glsl): night sea + descent into the deep (lines 1-2), a lone pulsing light in the abyss during the dua, light rays and rising bubbles for 'We responded to him', dawn over the sea for the reflection; plus the Arabic RTL reveal + gold shimmer. EN verse card from frame 0.",
    "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
    "note": "Tirmidhi 3505 (dua of Dhun-Nun) left out: sunnah.com/dorar could not be opened this run, so grading unverified."
   }
@@ -139,6 +139,10 @@
   {
    "date": "2026-11-19",
    "note": "14-day data (2 posts): IG EN reach ~100-114 per reel but avg watch only 3.9-5.4s; IG ML day-2 reel has 0 views after 22h (day 1: 4) — IG Malayalam distribution looks stuck, worth Adhil checking the account status; YT ML Shorts were the strongest channel (1,241 & 257 views at last check). YT stats could not be refreshed today (YouTube API quotaExceeded). Applied today (one variable, EN only): visual-first hook — Arabic verse card on screen from frame 0 with the hook as a caption under it. Compare EN avg watch time vs 3.9-5.4s."
+  },
+  {
+   "date": "2026-11-19",
+   "note": "Adhil: stop reusing the same animated scenes; design scenes and animations specific to each video's content (PLAYBOOK §4 'Content-specific design'). First theme: yunus."
   }
  ]
 }

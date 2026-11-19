@@ -14,35 +14,41 @@
   {
    "say": "Three layers of darkness. One sentence. And Allah answered.",
    "scene": "v1",
-   "bg": 0
+   "bg": 10
   },
   {
    "say": "Swallowed by the fish, in the dark of the night and the sea, Prophet Yunus, peace be upon him, called out:",
    "scene": "v1",
-   "cap": "The night. The sea. The belly of the fish."
+   "cap": "The night. The sea. The belly of the fish.",
+   "bg": 10
   },
   {
    "say": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
    "scene": "v1",
-   "cap": "“There is no deity except You…”"
+   "cap": "“There is no deity except You…”",
+   "bg": 11
   },
   {
    "say": "So We responded to him and saved him from the distress. And thus do We save the believers.",
    "scene": "v2",
-   "cap": "“And thus do We save the believers.”"
+   "cap": "“And thus do We save the believers.”",
+   "bg": 12
   },
   {
    "say": "Ibn Kathir explains: this is for believers who call on Allah and turn to Him in distress.",
-   "cap": "For every believer who calls on Allah in distress."
+   "cap": "For every believer who calls on Allah in distress.",
+   "bg": 13
   },
   {
    "say": "Whatever darkness you are in tonight, you know the words now.",
    "pause": 0.3,
-   "cap": "Whatever darkness you’re in tonight, you know the words now."
+   "cap": "Whatever darkness you’re in tonight, you know the words now.",
+   "bg": 13
   },
   {
    "say": "Save this, and send it to someone going through a hard time.",
-   "cap": "Save this & send it to someone who needs it 🤍"
+   "cap": "Save this & send it to someone who needs it 🤍",
+   "bg": 13
   }
  ],
  "scenes": {
@@ -56,5 +62,7 @@
    "tr": "“So We responded to him and saved him from the distress. And thus do We save the believers.”",
    "ref": "Qur'an 21 : 88"
   }
- }
+ },
+ "theme": "yunus",
+ "end_bg": 13
 }

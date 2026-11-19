@@ -54,6 +54,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09
 .lang-ml #hook div,.lang-ml #cap div{font-family:MLS;line-height:1.5}
 .lang-ml #savetr div{font-family:MLS;font-style:normal;line-height:1.55}
 .lang-ml #tr{font-family:MLS;font-style:normal;line-height:1.55}
+/*THEMECSS*/
 </style></head>
 <body><div id="stage">
 <canvas id="gl" width="432" height="768"></canvas>
@@ -81,7 +82,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09
 </div>
 <script id="fs" type="x-shader">
 precision highp float;
-uniform vec2 R; uniform float T; uniform int SA; uniform int SB; uniform float MX;
+uniform vec2 R; uniform float T; uniform int SA; uniform int SB; uniform float MX; uniform float TA; uniform float TB;
 float h1(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
 float n2(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
  return mix(mix(h1(i),h1(i+vec2(1,0)),f.x),mix(h1(i+vec2(0,1)),h1(i+vec2(1,1)),f.x),f.y);}
@@ -167,9 +168,12 @@ vec3 lanterns(vec2 uv){
  }
  return col;
 }
-vec3 scene(int s,vec2 uv){if(s==0)return dunes(uv);if(s==1)return arches(uv);return lanterns(uv);}
+//THEME_BEGIN
+vec3 theme(int s,vec2 uv,float ts){return vec3(0.);}
+//THEME_END
+vec3 scene(int s,vec2 uv,float ts){if(s==0)return dunes(uv);if(s==1)return arches(uv);if(s==2)return lanterns(uv);return theme(s,uv,ts);}
 void main(){vec2 uv=gl_FragCoord.xy/R;
- vec3 c=mix(scene(SA,uv),scene(SB,uv),MX);
+ vec3 c=mix(scene(SA,uv,TA),scene(SB,uv,TB),MX);
  float v=length((uv-.5)*vec2(.9,1.));c*=1.-smoothstep(.35,.85,v)*.7;
  c=c/(1.+c*.35);gl_FragColor=vec4(c,1.);}
 </script>
@@ -205,7 +209,7 @@ window.renderAt=function(t){
   const bg=TL.bg;let i=0;while(i+1<bg.length&&t>=bg[i+1].start)i++;
   const cur=bg[i],prev=bg[Math.max(0,i-1)],mx=i>0?ease((t-cur.start)/1.4):1;
   gl.viewport(0,0,432,768);gl.uniform2f(U("R"),432,768);gl.uniform1f(U('T'),t+(TL.seed||0));
-  gl.uniform1i(U('SA'),prev.scene);gl.uniform1i(U('SB'),cur.scene);gl.uniform1f(U('MX'),mx);gl.drawArrays(gl.TRIANGLES,0,3);
+  gl.uniform1i(U('SA'),prev.scene);gl.uniform1i(U('SB'),cur.scene);gl.uniform1f(U('MX'),mx);gl.uniform1f(U('TA'),t-prev.start);gl.uniform1f(U('TB'),t-cur.start);gl.drawArrays(gl.TRIANGLES,0,3);
   cv.style.transform=`scale(${1.05+.035*Math.sin(t*.08)})`;
   const g=$('grain').getContext('2d'),img=g.createImageData(360,640),gr=rng(1+Math.floor(t*30));
   for(let k=0;k<img.data.length;k+=4){const v=gr()*255;img.data[k]=img.data[k+1]=img.data[k+2]=v;img.data[k+3]=255}g.putImageData(img,0,0);

@@ -160,7 +160,7 @@ def main(d):
         a = (0.0 if S["lines"][0].get("scene") else a - .3) if j == 0 else a
         b = spans[keys[j + 1]][0] if j + 1 < len(keys) else b + .6
         scenes.append({"start": round(a, 3), "end": round(b, 3), **S["scenes"][k]})
-    TL = {"lang": lang, "duration": total, "handle": S["handle"], "scenes": scenes, "caps": caps, "endcard": S.get("endcard", ""), "bg": bg, "chunks": chunks, "seed": S.get("seed", 3), "save": S.get("save"), "hook_on_card": bool(S["lines"][0].get("scene")),
+    TL = {"lang": lang, "duration": total, "handle": S["handle"], "scenes": scenes, "caps": caps, "endcard": S.get("endcard", ""), "bg": bg, "chunks": chunks, "seed": S.get("seed", 3), "save": S.get("save"), "hook_on_card": bool(S["lines"][0].get("scene")), "theme": S.get("theme"),
           "logo": (ROOT.parent / "brand" / ("logo-daily-gold.png" if lang == "en" else "logo-malayalam-gold.png")).as_uri()}
     (d / "timeline.json").write_text(json.dumps(TL, ensure_ascii=False, indent=1))
     render(d, TL)
@@ -178,7 +178,16 @@ def render(d, TL):
     with sync_playwright() as p:
         b = p.chromium.launch(args=["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"])
         pg = b.new_page(viewport={"width": 1080, "height": 1920})
-        pg.goto((ROOT / "reel.html").as_uri())
+        page = ROOT / "reel.html"
+        if TL.get("theme"):  # per-video design: engine/themes/<theme>.glsl (+ optional .css)
+            import re
+            th = ROOT / "themes" / TL["theme"]
+            html = page.read_text()
+            html = re.sub(r"//THEME_BEGIN.*?//THEME_END", lambda m: (th.with_suffix(".glsl")).read_text(), html, flags=re.S)
+            if th.with_suffix(".css").exists():
+                html = html.replace("/*THEMECSS*/", th.with_suffix(".css").read_text())
+            page = ROOT / f"_reel_{d.name}.html"; page.write_text(html)
+        pg.goto(page.as_uri())
         pg.evaluate("tl => { window.TL = tl }", TL)
         pg.wait_for_function("window.READY === true")
         err = pg.evaluate("window.SHERR || ''")

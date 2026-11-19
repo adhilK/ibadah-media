@@ -5,3 +5,4 @@ seg/
 prev_*.jpg
 .env
 work/
+engine/_reel_*.html
