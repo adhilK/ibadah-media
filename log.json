@@ -114,6 +114,10 @@
   {
    "date": "2026-11-18",
    "note": "Afternoon check: the EN payoff-statement hook did not help IG watch time (3.9s vs 5.3s on day 1; first save though). The standout is YouTube Malayalam Shorts: 1,241 views/26 likes (day 1) and 257 views (day 2, same day) vs 11 and 0 for EN Shorts, while IG Malayalam reach is near zero. Next run: keep Malayalam as-is (it's the audience that's watching); for EN test a 2-3s visual-first hook (Arabic verse card on screen from frame 1 with a short spoken line) instead of text over the arch corridor."
+  },
+  {
+   "date": "2026-11-19",
+   "note": "Run blocked: Composio in this session only has the @scplksa Instagram account (no instagram_purga-talari / instagram_semic-ratio, no YouTube), so no metrics; and fetches to quran.com, api.quran.com and sunnah.com were refused (permission prompts unanswered in the unattended run), so sources could not be verified and no reel was made. Planned topic for next run: story of the prophets, Yunus's dua (Qur'an 21:87-88). Carry over yesterday's EN test: visual-first hook."
   }
  ]
 }
