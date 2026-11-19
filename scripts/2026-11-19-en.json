@@ -1,0 +1,60 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "endcard": "Save this for your darkest night",
+ "save": {
+  "ar": "لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ\nإِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+  "tr": "“There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.”",
+  "ref": "Qur'an 21 : 87"
+ },
+ "lines": [
+  {
+   "say": "Three layers of darkness. One sentence. And Allah answered.",
+   "scene": "v1",
+   "bg": 0
+  },
+  {
+   "say": "Swallowed by the fish, in the dark of the night and the sea, Prophet Yunus, peace be upon him, called out:",
+   "scene": "v1",
+   "cap": "The night. The sea. The belly of the fish."
+  },
+  {
+   "say": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
+   "scene": "v1",
+   "cap": "“There is no deity except You…”"
+  },
+  {
+   "say": "So We responded to him and saved him from the distress. And thus do We save the believers.",
+   "scene": "v2",
+   "cap": "“And thus do We save the believers.”"
+  },
+  {
+   "say": "Ibn Kathir explains: this is for believers who call on Allah and turn to Him in distress.",
+   "cap": "For every believer who calls on Allah in distress."
+  },
+  {
+   "say": "Whatever darkness you are in tonight, you know the words now.",
+   "pause": 0.3,
+   "cap": "Whatever darkness you’re in tonight, you know the words now."
+  },
+  {
+   "say": "Save this, and send it to someone going through a hard time.",
+   "cap": "Save this & send it to someone who needs it 🤍"
+  }
+ ],
+ "scenes": {
+  "v1": {
+   "ar": "فَنَادَىٰ فِى ٱلظُّلُمَـٰتِ أَن لَّآ إِلَـٰهَ إِلَّآ أَنتَ\nسُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+   "tr": "“And he called out within the darknesses, ‘There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.’”",
+   "ref": "Qur'an 21 : 87"
+  },
+  "v2": {
+   "ar": "فَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَـٰهُ مِنَ ٱلْغَمِّ ۚ\nوَكَذَٰلِكَ نُـۨجِى ٱلْمُؤْمِنِينَ",
+   "tr": "“So We responded to him and saved him from the distress. And thus do We save the believers.”",
+   "ref": "Qur'an 21 : 88"
+  }
+ }
+}

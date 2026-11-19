@@ -125,7 +125,7 @@ def main(d):
         tts(L["say"], lang, voice, str(f))
         n = dur(f)
         caps.append({"start": round(t, 3), "end": round(t + n + gap * .8, 3), "text": L.get("cap", L["say"])})
-        if i > 0:
+        if i > 0 or L.get("scene"):  # line 0 with a scene = visual-first hook: shown as caption under the card
             cap_text = L.get("cap", L["say"])
             if cap_text == L["say"]:
                 ch, _, _ = time_chunks(cap_text, lang, f, t)
@@ -157,10 +157,10 @@ def main(d):
     scenes = []
     for j, k in enumerate(keys):
         a, b = spans[k]
-        a = a - .3 if j == 0 else a
+        a = (0.0 if S["lines"][0].get("scene") else a - .3) if j == 0 else a
         b = spans[keys[j + 1]][0] if j + 1 < len(keys) else b + .6
         scenes.append({"start": round(a, 3), "end": round(b, 3), **S["scenes"][k]})
-    TL = {"lang": lang, "duration": total, "handle": S["handle"], "scenes": scenes, "caps": caps, "endcard": S.get("endcard", ""), "bg": bg, "chunks": chunks, "seed": S.get("seed", 3), "save": S.get("save"),
+    TL = {"lang": lang, "duration": total, "handle": S["handle"], "scenes": scenes, "caps": caps, "endcard": S.get("endcard", ""), "bg": bg, "chunks": chunks, "seed": S.get("seed", 3), "save": S.get("save"), "hook_on_card": bool(S["lines"][0].get("scene")),
           "logo": (ROOT.parent / "brand" / ("logo-daily-gold.png" if lang == "en" else "logo-malayalam-gold.png")).as_uri()}
     (d / "timeline.json").write_text(json.dumps(TL, ensure_ascii=False, indent=1))
     render(d, TL)

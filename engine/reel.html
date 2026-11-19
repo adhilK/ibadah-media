@@ -29,7 +29,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#020c09
 #arch{position:absolute;inset:0;width:920px;height:880px;overflow:visible;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
 #ar{white-space:pre-line;position:absolute;top:250px;left:90px;right:90px;height:260px;display:flex;align-items:center;justify-content:center;text-align:center;
   font-family:Amiri;font-weight:700;direction:rtl;line-height:1.7;
-  background:linear-gradient(#fbe9b8,#d8b46a 60%,#b08840);-webkit-background-clip:text;color:transparent}
+  background:linear-gradient(105deg,rgba(255,255,255,0) 42%,rgba(255,248,225,.95) 50%,rgba(255,255,255,0) 58%) no-repeat,linear-gradient(#fbe9b8,#d8b46a 60%,#b08840);background-size:300% 100%,100% 100%;background-position:120% 0,0 0;-webkit-background-clip:text;color:transparent}
 #orn{position:absolute;top:540px;left:0;right:0;text-align:center;color:var(--gold);font-size:22px;letter-spacing:22px}
 #tr{text-wrap:balance;position:absolute;top:585px;left:100px;right:100px;height:190px;display:flex;align-items:center;justify-content:center;text-align:center;
   color:var(--cream);font-family:Serif;font-style:italic;font-weight:600;line-height:1.38}
@@ -211,20 +211,23 @@ window.renderAt=function(t){
   for(let k=0;k<img.data.length;k+=4){const v=gr()*255;img.data[k]=img.data[k+1]=img.data[k+2]=v;img.data[k+3]=255}g.putImageData(img,0,0);
   once('top',TL.logo,v=>$('toplogo').src=v);
   const caps=TL.caps,endStart=caps[caps.length-1].end;
-  const h=caps[0],hk=fade(t,Math.max(0,h.start-.35),h.end+.1,.5),hd=$('hook').firstChild;
+  const h=caps[0],hk=TL.hook_on_card?0:fade(t,Math.max(0,h.start-.35),h.end+.1,.5),hd=$('hook').firstChild;
   once('hook',h.text,v=>{hd.textContent=v;fit(hd,ml?82:104,40,888,900)});
   hd.style.opacity=hk;hd.style.transform=`translateY(${(1-hk)*30}px)`;hd.style.filter=`blur(${(1-hk)*8}px)`;
   const S=TL.scenes,span=S.length?[S[0].start,S[S.length-1].end]:[-9,-9],inS=t>=span[0]-.2&&t<span[1]+.2;
-  const ca=fade(t,span[0],span[1],.8);$('card').style.opacity=ca;$('card').style.transform=`translateY(${(1-ca)*40}px)`;
-  const draw=ease((t-span[0])/1.8);
+  const pre=TL.hook_on_card?1.8:0,ca=fade(t,span[0]-pre,span[1],.8);$('card').style.opacity=ca;$('card').style.transform=`translateY(${(1-ca)*40}px)`;
+  const draw=ease((t-span[0]+pre)/1.8);
   for(const id of['archA','archB']){const L=$(id).getTotalLength();$(id).style.strokeDasharray=L;$(id).style.strokeDashoffset=L*(1-draw)}
-  $('glassP').style.opacity=ease((t-span[0])/1.2);$('star').style.opacity=ease((t-span[0]-1.2)/.6);
+  $('glassP').style.opacity=ease((t-span[0]+pre)/1.2);$('star').style.opacity=ease((t-span[0]+pre-1.2)/.6);
   const s=S.find(x=>t>=x.start&&t<x.end);
   if(s){once('ar',s.ar,v=>{$('ar').textContent=v;fit($('ar'),108,50,740,260)});
         once('tr',s.tr,v=>{$('tr').textContent=v;fit($('tr'),ml?44:56,24,720,190)});
         once('ref',s.ref,v=>$('ref').firstChild.textContent=v)}
-  const sa=s?Math.min(ease((t-s.start)/.5),ease((s.end-t)/.3)):0;
+  const s0=TL.hook_on_card&&s===S[0]?.5:0,sa=s?Math.min(ease((t-s.start+s0)/.5),ease((s.end-t)/.3)):0;
   for(const id of['ar','tr','ref','orn']){$(id).style.opacity=sa;$(id).style.transform=`translateY(${(1-sa)*18}px)`}
+  if(s){const rv=ease((t-s.start+s0*.8)/1.4)*100;$('ar').style.clipPath=`inset(0 0 0 ${100-rv}% )`;$('ar').style.opacity=Math.min(1,ease((s.end-t)/.3));
+    const sw=clamp((t-s.start-1.3)/1.6,0,1);$('ar').style.backgroundPosition=`${120-sw*140}% 0,0 0`;
+    $('ar').style.filter=`drop-shadow(0 0 ${14*Math.sin(Math.PI*sw)}px rgba(243,220,160,.55))`}
   const x=CH.find(c=>t>=c.start&&t<c.end),cd=$('cap').firstChild;$('cap').className='txt'+(inS?'':' mid');
   if(x){once('cap',x.text,v=>{cd.textContent=v;fit(cd,ml?64:78,34,888,290)});
     const k=Math.min(ease((t-x.start)/.3),ease((x.end-t)/.2));
