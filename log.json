@@ -115,7 +115,43 @@
    "ml_url": "https://www.instagram.com/reel/Df6qk8ej2ZQ/",
    "posted_utc": "2026-11-19T08:36",
    "yt_en_id": "MEgFAt5TKwQ",
-   "yt_ml_id": "55dpYloBSCk"
+   "yt_ml_id": "55dpYloBSCk",
+   "metrics": {
+    "checked": "2026-11-20T03:45Z",
+    "note": "~19h after posting; YT stats not refreshed (YouTube API quotaExceeded again)",
+    "en": {
+     "views": 0,
+     "reach": 0,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 0,
+     "avg_watch_ms": 0
+    },
+    "ml": {
+     "views": 147,
+     "reach": 133,
+     "saved": 0,
+     "shares": 1,
+     "total_interactions": 5,
+     "avg_watch_ms": 5105
+    }
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "type": "dua_adhkar",
+   "topic": "Two words light on the tongue, heavy on the Scale (SubhanAllahi wa bihamdihi, SubhanAllahil Azim)",
+   "source": "Sahih al-Bukhari 7563 (sunnah.com + beta.sunnah.com: Book 97 Tawheed, chapter on Qur'an 21:47); Riyad as-Salihin 1408 ([Al-Bukhari and Muslim], muttafaq alayh); Hisn al-Muslim 256 (translation); Qur'an 21:47 via api.quran.com (ids 20, 37); Tafsir Ibn Kathir on 21:47 (api.quran.com tafsir 169) quoting this hadith from the Two Sahihs. dorar.net blocked (Cloudflare) — grading rests on Bukhari/Muslim.",
+   "hook": {
+    "en": "Two phrases. Light on the tongue. Heavy on the Scale. (back to big text hook over the theme scene)",
+    "ml": "നാവിന് വളരെ എളുപ്പം. തുലാസിൽ വളരെ ഭാരം. രണ്ടേ രണ്ട് വാക്കുകൾ. (text hook, unchanged format)"
+   },
+   "len_s": {
+    "en": 44.3,
+    "ml": 47.2
+   },
+   "motion": "Theme 'mizan' (engine/themes/mizan.glsl): a golden balance draws in and tips under the hook; gold motes drift upward for 'light on the tongue'; gold grains fall and pile into a glowing heap for 'heavy'; a vast balance over a dusk horizon with a pulsing mustard-seed light for 21:47; NEW motion: a 33-bead tasbih ring lighting bead by bead under the CTA.",
+   "status": "awaiting Adhil's approval (approval period until 2026-12-01)"
   }
  ],
  "learnings": [
@@ -150,6 +186,10 @@
   {
    "date": "2026-11-19",
    "note": "Adhil: stop reusing the same animated scenes; design scenes and animations specific to each video's content (PLAYBOOK §4 'Content-specific design'). First theme: yunus."
+  },
+  {
+   "date": "2026-11-20",
+   "note": "Yunus reel (first content-specific theme): IG ML jumped from 0-4 views to 147 views/133 reach (5.1s avg watch) — the first real IG Malayalam distribution; IG EN with the visual-first hook (verse card from frame 0) got 0 views after ~19h vs 119-127 for the two text-hook reels. One data point, but the visual-first hook is the only EN variable that changed. Applied today (one variable, EN only): revert EN to the big text hook over the themed scene, keep the themed visuals for both. YT stats still blocked by quotaExceeded."
   }
  ]
 }
