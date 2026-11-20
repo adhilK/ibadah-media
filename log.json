@@ -147,16 +147,18 @@
     "ml": "നാവിന് വളരെ എളുപ്പം. തുലാസിൽ വളരെ ഭാരം. രണ്ടേ രണ്ട് വാക്കുകൾ. (text hook, unchanged format)"
    },
    "len_s": {
-    "en": 44.3,
+    "en": 43.9,
     "ml": 47.2
    },
    "motion": "Theme 'mizan' (engine/themes/mizan.glsl): a golden balance draws in and tips under the hook; gold motes drift upward for 'light on the tongue'; gold grains fall and pile into a glowing heap for 'heavy'; a vast balance over a dusk horizon with a pulsing mustard-seed light for 21:47; NEW motion: a 33-bead tasbih ring lighting bead by bead under the CTA.",
-   "status": "approved; IG ML live; IG EN published then Adhil flagged a mistake in the English reel and asked to delete it (API can't delete — asked him to remove it in the app); YT not uploaded yet",
-   "en_media_id": "18107487695458641",
-   "en_url": "https://www.instagram.com/reel/Df9b19EmLFp/",
+   "status": "published after Adhil's approval; EN re-rendered and reposted after he caught TTS reading 'wa' as 'W A' (first EN post deleted by Adhil)",
+   "en_media_id": "18136762633795461",
+   "en_url": "https://www.instagram.com/reel/Df9dbp5gN8V/",
    "ml_media_id": "18107411708021439",
    "ml_url": "https://www.instagram.com/reel/Df9bwfAEgOH/",
-   "posted_utc": "2026-11-20T10:24"
+   "posted_utc": "2026-11-20T10:39",
+   "yt_en_id": "fI0AS8AGnro",
+   "yt_ml_id": "K-YOtIHRSKg"
   }
  ],
  "learnings": [
@@ -195,6 +197,10 @@
   {
    "date": "2026-11-20",
    "note": "Yunus reel (first content-specific theme): IG ML jumped from 0-4 views to 147 views/133 reach (5.1s avg watch) — the first real IG Malayalam distribution; IG EN with the visual-first hook (verse card from frame 0) got 0 views after ~19h vs 119-127 for the two text-hook reels. One data point, but the visual-first hook is the only EN variable that changed. Applied today (one variable, EN only): revert EN to the big text hook over the themed scene, keep the themed visuals for both. YT stats still blocked by quotaExceeded."
+  },
+  {
+   "date": "2026-11-20",
+   "note": "Adhil: the English Chirp voice spelled out a standalone 'wa' as 'W A'. Write transliterated dhikr as joined words (e.g. 'Subhaanallaahi wabihamdihi') and listen to / send the transliteration line before the full render."
   }
  ]
 }

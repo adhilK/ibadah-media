@@ -52,6 +52,7 @@ python3 engine/build.py work/en && python3 engine/build.py work/ml
 ```
 A full render takes ~20 min and background jobs can be killed. Run each render in the foreground as `RESUME=1 timeout 580 python3 engine/build.py work/en` and repeat the same command until it prints `wrote`; RESUME keeps finished frames and the voiceover. (Run the first pass without RESUME so the voiceover is generated.)
 Voices: Google Chirp 3 HD `Charon` (en-US / ml-IN) only — free tier covers this volume. Never use Gemini-TTS or Studio voices (not free).
+Transliterated Arabic in English `say` lines: join short particles to the next word ("wabihamdihi", not "wa bi hamdihi"); the en-US voice spells a lone "wa" as "W A". Check the transliteration line's audio before the full render.
 QA before upload: view frames at every caption, verse card and the end card; no text may overflow or overlap.
 
 **Content-specific design (Adhil, 2026-11-19; replaces the generic dunes/arches/lanterns look):** every video gets its own visual theme designed from its content — never reuse the same scene set for a new topic.
