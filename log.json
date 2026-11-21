@@ -12,14 +12,14 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-19T04:30Z",
+    "checked": "2026-11-21T04:00Z",
     "en": {
-     "views": 127,
-     "reach": 114,
+     "views": 128,
+     "reach": 115,
      "saved": 0,
      "shares": 3,
      "total_interactions": 7,
-     "avg_watch_ms": 5365
+     "avg_watch_ms": 5382
     },
     "ml": {
      "views": 4,
@@ -28,16 +28,6 @@
      "shares": 2,
      "total_interactions": 2,
      "avg_watch_ms": 17509
-    },
-    "yt_en": {
-     "views": 11,
-     "likes": 0,
-     "comments": 0
-    },
-    "yt_ml": {
-     "views": 1241,
-     "likes": 26,
-     "comments": 1
     }
    },
    "yt_en_id": "_xzaY7EzZ6Y",
@@ -63,15 +53,14 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-19T04:30Z",
-    "note": "~22h after posting (IG); YT stats not refreshed: YouTube Data API quotaExceeded",
+    "checked": "2026-11-21T04:00Z",
     "en": {
-     "views": 119,
-     "reach": 101,
+     "views": 120,
+     "reach": 102,
      "saved": 1,
      "shares": 0,
      "total_interactions": 5,
-     "avg_watch_ms": 3928
+     "avg_watch_ms": 3902
     },
     "ml": {
      "views": 0,
@@ -82,13 +71,13 @@
      "avg_watch_ms": 0
     },
     "yt_en": {
-     "views": 0,
-     "likes": 0,
+     "views": 62,
+     "likes": 12,
      "comments": 0
     },
     "yt_ml": {
-     "views": 257,
-     "likes": 5,
+     "views": 1185,
+     "likes": 16,
      "comments": 0
     }
    }
@@ -117,15 +106,14 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-20T03:45Z",
-    "note": "~19h after posting; YT stats not refreshed (YouTube API quotaExceeded again)",
+    "checked": "2026-11-21T04:00Z",
     "en": {
      "views": 0,
-     "reach": 0,
+     "reach": 1,
      "saved": 0,
      "shares": 0,
      "total_interactions": 0,
-     "avg_watch_ms": 0
+     "avg_watch_ms": 2897
     },
     "ml": {
      "views": 147,
@@ -133,7 +121,17 @@
      "saved": 0,
      "shares": 1,
      "total_interactions": 5,
-     "avg_watch_ms": 5105
+     "avg_watch_ms": 5080
+    },
+    "yt_en": {
+     "views": 9,
+     "likes": 0,
+     "comments": 0
+    },
+    "yt_ml": {
+     "views": 1290,
+     "likes": 25,
+     "comments": 0
     }
    }
   },
@@ -158,7 +156,52 @@
    "ml_url": "https://www.instagram.com/reel/Df9bwfAEgOH/",
    "posted_utc": "2026-11-20T10:39",
    "yt_en_id": "fI0AS8AGnro",
-   "yt_ml_id": "K-YOtIHRSKg"
+   "yt_ml_id": "K-YOtIHRSKg",
+   "metrics": {
+    "checked": "2026-11-21T04:00Z",
+    "en": {
+     "views": 1,
+     "reach": 1,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 0,
+     "avg_watch_ms": 4627
+    },
+    "ml": {
+     "views": 139,
+     "reach": 126,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 2,
+     "avg_watch_ms": 4709
+    },
+    "yt_en": {
+     "views": 12,
+     "likes": 0,
+     "comments": 0
+    },
+    "yt_ml": {
+     "views": 1608,
+     "likes": 32,
+     "comments": 1
+    }
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "type": "ayah",
+   "topic": "Do not despair of Allah's mercy (Qur'an 39:53-54)",
+   "source": "Qur'an 39:53-54 via api.quran.com (Uthmani text; Saheeh Intl id 20 incl. footnote 'For those who repent and correct themselves'; Malayalam id 37); Tafsir Ibn Kathir on 39:53 (api.quran.com tafsir 169, cross-checked on quran.com/39:53/tafsirs/en-tafisr-ibn-kathir): call to all sinners to repent, forgiven 'even if they are like the foam of the sea', 'the door of repentance and mercy is expansive'. No hadith used (sunnah.com returned 403 from the fetch sandbox).",
+   "hook": {
+    "en": "Think your sins are too many for Allah to forgive? Listen to this.",
+    "ml": "പാപങ്ങൾ ഒരുപാടായി, ഇനി പൊറുക്കപ്പെടില്ലെന്ന് തോന്നുന്നുണ്ടോ?"
+   },
+   "len_s": {
+    "en": 46.3,
+    "ml": 52.3
+   },
+   "motion": "Theme 'rahmah' (engine/themes/rahmah.glsl): rain-storm plain with a distant closed door showing a seam of light under the hook; clouds part with slanting rays for 39:53; a path of light draws forward and the door's leaves swing open for 39:54; NEW motion: sea foam crests dissolving into rising gold motes for Ibn Kathir's 'foam of the sea'; open glowing door at dawn for the CTA/end card.",
+   "status": "rendered; awaiting Adhil approval (approval period until 2026-12-01)"
   }
  ],
  "learnings": [
@@ -201,6 +244,10 @@
   {
    "date": "2026-11-20",
    "note": "Adhil: the English Chirp voice spelled out a standalone 'wa' as 'W A'. Write transliterated dhikr as joined words (e.g. 'Subhaanallaahi wabihamdihi') and listen to / send the transliteration line before the full render."
+  },
+  {
+   "date": "2026-11-21",
+   "note": "14-day data: IG EN collapsed to 0-1 views on BOTH 19th (visual-first hook) and 20th (text hook restored) after ~120 on the 17th/18th, so the hook format is not the cause; it looks account-level (Adhil should check Settings > Account Status on @ibadah.daily and avoid deleting/reposting). IG ML is steady at ~140 views/5s watch for the themed reels. YT ML Shorts are the clear winner and rising: 1,185 / 1,290 / 1,608 views (32 likes + first comment on the 20th) vs 9-62 for YT EN Shorts. Applied today (one variable, YT EN only): the EN Shorts title leads with the viewer's question hook instead of a topic label (YT ML titles, which work, read like a line of the reel). IG formats held constant so an EN recovery can be read as account-level."
   }
  ]
 }
