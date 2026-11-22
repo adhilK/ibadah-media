@@ -28,7 +28,14 @@
      "shares": 2,
      "total_interactions": 2,
      "avg_watch_ms": 17509
-    }
+    },
+    "yt_en": {
+     "views": 20
+    },
+    "yt_ml": {
+     "views": 1500
+    },
+    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
    },
    "yt_en_id": "_xzaY7EzZ6Y",
    "yt_ml_id": "zOH3G2-hKfM",
@@ -71,15 +78,12 @@
      "avg_watch_ms": 0
     },
     "yt_en": {
-     "views": 62,
-     "likes": 12,
-     "comments": 0
+     "views": 63
     },
     "yt_ml": {
-     "views": 1185,
-     "likes": 16,
-     "comments": 0
-    }
+     "views": 1100
+    },
+    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
    }
   },
   {
@@ -124,15 +128,12 @@
      "avg_watch_ms": 5080
     },
     "yt_en": {
-     "views": 9,
-     "likes": 0,
-     "comments": 0
+     "views": 19
     },
     "yt_ml": {
-     "views": 1290,
-     "likes": 25,
-     "comments": 0
-    }
+     "views": 1200
+    },
+    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
    }
   },
   {
@@ -176,15 +177,12 @@
      "avg_watch_ms": 4680
     },
     "yt_en": {
-     "views": 12,
-     "likes": 0,
-     "comments": 0
+     "views": 12
     },
     "yt_ml": {
-     "views": 1608,
-     "likes": 32,
-     "comments": 1
-    }
+     "views": 1800
+    },
+    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
    }
   },
   {
@@ -227,7 +225,14 @@
      "shares": 0,
      "total_interactions": 0,
      "avg_watch_ms": 0
-    }
+    },
+    "yt_en": {
+     "views": 149
+    },
+    "yt_ml": {
+     "views": 348
+    },
+    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
    }
   }
  ],
@@ -279,6 +284,10 @@
   {
    "date": "2026-11-22",
    "note": "14-day IG data shows a pattern: on 4 of 5 days exactly ONE of the two accounts got ~0 views while the other got 120-147 (EN dead on 19th/20th, ML dead on 18th and 21st [0 after ~24h], EN back to 126 views/4.9s on the 21st). Both reels were published within ~1 minute of each other with identical visuals/Arabic cards, so Instagram is likely treating one as a duplicate/unoriginal of the other. Next posting test (one variable): stagger the two IG posts by 3+ hours (ML first, EN later) with everything else unchanged; if suppression persists, differentiate the visuals per language. YT stats not refreshable (quotaExceeded again). No reel made today: every primary-source fetch (sunnah.com, api.quran.com, quran.com, dorar.net) was refused because permission prompts went unanswered in the unattended run, so nothing could be verified. Planned topic for next run: hadith on controlling anger (Bukhari 6114 'the strong is the one who controls himself when angry', Bukhari 6116 'Do not become angry', with Qur'an 3:134) — not yet verified."
+  },
+  {
+   "date": "2026-11-22",
+   "note": "YT (Adhil's screenshot, 28 subs): the question-hook EN Shorts title on the 21st got 149 views in ~1 day vs 12-63 for all earlier EN Shorts with topic-label titles: the title test worked, keep question-hook titles for EN. YT ML keeps leading (1.1K-1.8K; the 21st at 348 after ~1 day). Today: keep everything else constant and keep question-hook titles on both YT languages."
   }
  ]
 }

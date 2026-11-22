@@ -1,0 +1,77 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "hilm",
+ "end_bg": 14,
+ "endcard": "Save this for the moment anger rises",
+ "save": {
+  "ar": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ\nإِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+  "tr": "“The strong is not the one who overcomes the people by his strength, but the strong is the one who controls himself while in anger.”",
+  "ref": "Sahih al-Bukhari 6114"
+ },
+ "lines": [
+  {
+   "say": "Ever said something in anger that you could never take back?",
+   "bg": 10
+  },
+  {
+   "say": "The Prophet, peace be upon him, said: The strong is not the one who overcomes the people by his strength,",
+   "scene": "h1",
+   "cap": "“The strong is not the one who overcomes the people by his strength…”",
+   "bg": 11
+  },
+  {
+   "say": "but the strong is the one who controls himself while in anger.",
+   "scene": "h1",
+   "cap": "“…but the one who controls himself while in anger.”",
+   "bg": 11
+  },
+  {
+   "say": "A man said to him: Advise me! He said: Do not become angry. The man asked again and again, and each time the answer was the same: Do not become angry.",
+   "scene": "h2",
+   "cap": "“Do not become angry.”",
+   "bg": 12
+  },
+  {
+   "say": "And Allah praises those who restrain anger and who pardon the people. And Allah loves the doers of good.",
+   "scene": "v1",
+   "cap": "“…who restrain anger and who pardon the people”",
+   "bg": 13
+  },
+  {
+   "say": "Ibn Kathir explains: they do not act on their anger, and they forgive those who wronged them.",
+   "cap": "They don't act on their anger. They forgive.",
+   "bg": 13
+  },
+  {
+   "say": "Next time anger rises, hold it. That is real strength.",
+   "pause": 0.3,
+   "bg": 14
+  },
+  {
+   "say": "Save this, and send it to someone who needs it today.",
+   "cap": "Save this & send it to someone who needs it today 🤍",
+   "bg": 14
+  }
+ ],
+ "scenes": {
+  "h1": {
+   "ar": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ\nإِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+   "tr": "“The strong is not the one who overcomes the people by his strength, but the strong is the one who controls himself while in anger.”",
+   "ref": "Sahih al-Bukhari 6114"
+  },
+  "h2": {
+   "ar": "لاَ تَغْضَبْ",
+   "tr": "“Do not become angry.” (repeated several times)",
+   "ref": "Sahih al-Bukhari 6116"
+  },
+  "v1": {
+   "ar": "وَٱلْكَـٰظِمِينَ ٱلْغَيْظَ وَٱلْعَافِينَ عَنِ ٱلنَّاسِ ۗ\nوَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ",
+   "tr": "“…and who restrain anger and who pardon the people – and Allāh loves the doers of good.”",
+   "ref": "Qur'an 3 : 134"
+  }
+ }
+}
