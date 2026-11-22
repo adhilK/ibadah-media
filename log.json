@@ -12,7 +12,7 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-21T04:00Z",
+    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 128,
      "reach": 115,
@@ -53,7 +53,7 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-21T04:00Z",
+    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 120,
      "reach": 102,
@@ -106,7 +106,7 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-21T04:00Z",
+    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 0,
      "reach": 1,
@@ -158,7 +158,7 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-21T04:00Z",
+    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 1,
      "reach": 1,
@@ -168,12 +168,12 @@
      "avg_watch_ms": 4627
     },
     "ml": {
-     "views": 139,
+     "views": 140,
      "reach": 126,
      "saved": 0,
      "shares": 0,
      "total_interactions": 2,
-     "avg_watch_ms": 4709
+     "avg_watch_ms": 4680
     },
     "yt_en": {
      "views": 12,
@@ -209,7 +209,26 @@
    "posted_utc": "2026-11-21T08:18",
    "yt_en_id": "qQ8v84Lrsls",
    "yt_ml_id": "gy0BsHgMGPI",
-   "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts"
+   "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
+   "metrics": {
+    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "en": {
+     "views": 126,
+     "reach": 107,
+     "saved": 1,
+     "shares": 1,
+     "total_interactions": 10,
+     "avg_watch_ms": 4917
+    },
+    "ml": {
+     "views": 0,
+     "reach": 0,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 0,
+     "avg_watch_ms": 0
+    }
+   }
   }
  ],
  "learnings": [
@@ -256,6 +275,10 @@
   {
    "date": "2026-11-21",
    "note": "14-day data: IG EN collapsed to 0-1 views on BOTH 19th (visual-first hook) and 20th (text hook restored) after ~120 on the 17th/18th, so the hook format is not the cause; it looks account-level (Adhil should check Settings > Account Status on @ibadah.daily and avoid deleting/reposting). IG ML is steady at ~140 views/5s watch for the themed reels. YT ML Shorts are the clear winner and rising: 1,185 / 1,290 / 1,608 views (32 likes + first comment on the 20th) vs 9-62 for YT EN Shorts. Applied today (one variable, YT EN only): the EN Shorts title leads with the viewer's question hook instead of a topic label (YT ML titles, which work, read like a line of the reel). IG formats held constant so an EN recovery can be read as account-level."
+  },
+  {
+   "date": "2026-11-22",
+   "note": "14-day IG data shows a pattern: on 4 of 5 days exactly ONE of the two accounts got ~0 views while the other got 120-147 (EN dead on 19th/20th, ML dead on 18th and 21st [0 after ~24h], EN back to 126 views/4.9s on the 21st). Both reels were published within ~1 minute of each other with identical visuals/Arabic cards, so Instagram is likely treating one as a duplicate/unoriginal of the other. Next posting test (one variable): stagger the two IG posts by 3+ hours (ML first, EN later) with everything else unchanged; if suppression persists, differentiate the visuals per language. YT stats not refreshable (quotaExceeded again). No reel made today: every primary-source fetch (sunnah.com, api.quran.com, quran.com, dorar.net) was refused because permission prompts went unanswered in the unattended run, so nothing could be verified. Planned topic for next run: hadith on controlling anger (Bukhari 6114 'the strong is the one who controls himself when angry', Bukhari 6116 'Do not become angry', with Qur'an 3:134) — not yet verified."
   }
  ]
 }
