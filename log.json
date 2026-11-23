@@ -12,7 +12,7 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 128,
      "reach": 115,
@@ -60,7 +60,7 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 120,
      "reach": 102,
@@ -110,7 +110,7 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 0,
      "reach": 1,
@@ -159,7 +159,7 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
      "views": 1,
      "reach": 1,
@@ -209,14 +209,14 @@
    "yt_ml_id": "gy0BsHgMGPI",
    "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
    "metrics": {
-    "checked": "2026-11-22 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
     "en": {
-     "views": 126,
-     "reach": 107,
+     "views": 127,
+     "reach": 108,
      "saved": 1,
      "shares": 1,
      "total_interactions": 10,
-     "avg_watch_ms": 4917
+     "avg_watch_ms": 4938
     },
     "ml": {
      "views": 0,
@@ -262,7 +262,48 @@
    "yt_ml_id": "qjta1AejyO8",
    "en_media_id": "18084601094344366",
    "en_url": "https://www.instagram.com/reel/DgC1kWkGT61/",
-   "posted_utc_en": "2026-11-22T12:46"
+   "posted_utc_en": "2026-11-22T12:46",
+   "metrics": {
+    "en": {
+     "views": 0,
+     "reach": 0,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 0,
+     "avg_watch_ms": 0
+    },
+    "ml": {
+     "views": 134,
+     "reach": 127,
+     "saved": 1,
+     "shares": 1,
+     "total_interactions": 3,
+     "avg_watch_ms": 3281
+    },
+    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)"
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "type": "prophet_story",
+   "topic": "Musa at the sea: 'Indeed, with me is my Lord; He will guide me'",
+   "source": "Qur'an 26:60-65 via api.quran.com (Uthmani text; Saheeh Intl id 20; Malayalam id 37), opened today; Tafsir Ibn Kathir (abridged) on 26:60-68 via api.quran.com tafsir 169: sea ahead and Fir'awn's troops behind; Musa's meaning 'nothing of what you fear will happen to you, for Allah is the One Who commanded me to bring you here, and He does not go back on His promise'. No hadith used; the tafsir's extra reports (twelve paths, etc.) left out.",
+   "hook": {
+    "en": "The sea in front of you. The enemy behind you. Where do you run?",
+    "ml": "മുന്നിൽ കടൽ. പിന്നിൽ ശത്രുസൈന്യം. ഇനി എങ്ങോട്ട് ഓടും?"
+   },
+   "len_s": {
+    "en": 51.9,
+    "ml": 57.7
+   },
+   "motion": "Theme 'bahr' (engine/themes/bahr.glsl): dark sea at sunrise with a dust haze rising from the land behind (pursuers never shown); haze thickens and waves roughen for 26:61; sea calms and a gold light rises for 26:62; NEW motion: 'sea split' — a seam of light runs down the sea and tears open into a perspective canyon of towering water walls with a gold path (26:63); full dawn down the path for Ibn Kathir/CTA/end card.",
+   "visual_variant": "ML uses 'bahr_ml' (same scenes, mirrored, emerald sky, higher horizon, different card tint) so EN and ML reels are no longer visually identical (today's one test variable).",
+   "status": "awaiting Adhil's approval",
+   "caption_en": "The sea in front of you. The enemy behind you. Where do you run? 🤍\n\n\"And when the two companies saw one another, the companions of Moses said, 'Indeed, we are to be overtaken!' [Moses] said, 'No! Indeed, with me is my Lord; He will guide me.'\" (Qur'an 26:61-62)\n\"Then We inspired to Moses, 'Strike with your staff the sea,' and it parted, and each portion was like a great towering mountain.\" (Qur'an 26:63)\n\"And We saved Moses and those with him, all together.\" (Qur'an 26:65)\nTranslation: Saheeh International\n\nIbn Kathir: Musa was telling them that nothing they feared would happen, because Allah had commanded him to bring them there, and He does not go back on His promise.\n\nWhen every way looks shut, say it with certainty: my Lord is with me. Save this and send it to someone who feels trapped today.\n\n#islamicreminder #quran #prophetstories #tawakkul #musa",
+   "caption_ml": "മുന്നിൽ കടൽ. പിന്നിൽ ശത്രുസൈന്യം. ഇനി എങ്ങോട്ട് ഓടും? 🤍\n\n\"രണ്ട് സംഘവും പരസ്പരം കണ്ടപ്പോൾ മൂസായുടെ അനുചരന്മാർ പറഞ്ഞു: തീർച്ചയായും നാം പിടിയിലകപ്പെടാൻ പോകുകയാണ്. അദ്ദേഹം (മൂസാ) പറഞ്ഞു: ഒരിക്കലുമില്ല, തീർച്ചയായും എന്നോടൊപ്പം എന്റെ രക്ഷിതാവുണ്ട്. അവൻ എനിക്ക് വഴി കാണിച്ചുതരും.\" (ഖുർആൻ 26:61-62)\n\"നീ നിന്റെ വടികൊണ്ട് കടലിൽ അടിക്കൂ... അങ്ങനെ അത് (കടൽ) പിളരുകയും ഓരോ പൊളിയും വലിയ പർവ്വതം പോലെ ആയിത്തീരുകയും ചെയ്തു.\" (ഖുർആൻ 26:63)\n\nഇബ്നു കസീർ: അവരെ അവിടേക്ക് കൊണ്ടുവരാൻ കല്പിച്ചത് അല്ലാഹുവാണ്; അവൻ വാഗ്ദാനം തെറ്റിക്കില്ല.\n\nവഴികളെല്ലാം അടഞ്ഞെന്ന് തോന്നുമ്പോൾ ഓർക്കുക: എന്റെ റബ്ബ് എന്റെ കൂടെയുണ്ട്. സേവ് ചെയ്യൂ, ആവശ്യമുള്ളവർക്ക് അയച്ചുകൊടുക്കൂ.\n\n#islamicreminder #quran #malayalamislamic #ഇസ്ലാം #tawakkul",
+   "yt_en_title": "Sea in Front, Enemy Behind: Where Would You Run? | Qur'an 26:62 #Shorts",
+   "yt_ml_title": "മുന്നിൽ കടൽ, പിന്നിൽ ശത്രു: എങ്ങോട്ട് ഓടും? | ഖുർആൻ 26:62 | Malayalam #Shorts",
+   "posting_plan": "after approval: IG ML first, IG EN 3+ hours later (stagger kept); YT both"
   }
  ],
  "learnings": [
@@ -317,6 +358,10 @@
   {
    "date": "2026-11-22",
    "note": "YT (Adhil's screenshot, 28 subs): the question-hook EN Shorts title on the 21st got 149 views in ~1 day vs 12-63 for all earlier EN Shorts with topic-label titles: the title test worked, keep question-hook titles for EN. YT ML keeps leading (1.1K-1.8K; the 21st at 348 after ~1 day). Today: keep everything else constant and keep question-hook titles on both YT languages."
+  },
+  {
+   "date": "2026-11-23",
+   "note": "14-day IG (refreshed today): the 3h stagger did NOT break the pattern: 22nd ML (posted first) 134 views/3.3s, EN (+3h) 0 views; 21st EN 127/ML 0; 20th ML 140/EN 1; 19th ML 147/EN 0; 18th EN 120/ML 0. Exactly one account is ~0 every day, so posting time isn't it. Voice and language always differed; the identical visuals/Arabic cards are the remaining shared signal. Applied today (one variable): distinct visuals per language (EN theme 'bahr' gold sunrise; ML 'bahr_ml' mirrored, emerald sky, higher horizon, different card tint), stagger kept. If one account still gets 0, next suspect is account-level (same app/IP linking the two accounts) and Adhil should check Account Status on whichever account is zeroed. YT stats: quotaExceeded again (Composio's YouTube API quota), so YT learning needs a Studio screenshot from Adhil."
   }
  ]
 }
