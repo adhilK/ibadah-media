@@ -1,0 +1,79 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "bahr",
+ "end_bg": 14,
+ "endcard": "Save this for when every way looks shut",
+ "save": {
+  "ar": "كَلَّآ ۖ إِنَّ مَعِىَ رَبِّى سَيَهْدِينِ",
+  "tr": "“No! Indeed, with me is my Lord; He will guide me.”",
+  "ref": "Qur'an 26 : 62"
+ },
+ "lines": [
+  {
+   "say": "The sea in front of you. The enemy behind you. Where do you run?",
+   "bg": 10
+  },
+  {
+   "say": "Pharaoh's army reached them at sunrise.",
+   "bg": 11
+  },
+  {
+   "say": "Musa's companions cried: Indeed, we are to be overtaken!",
+   "scene": "v1",
+   "cap": "“Indeed, we are to be overtaken!”",
+   "bg": 11
+  },
+  {
+   "say": "Moses said: No! Indeed, with me is my Lord; He will guide me.",
+   "scene": "v2",
+   "cap": "“No! Indeed, with me is my Lord; He will guide me.”",
+   "bg": 12
+  },
+  {
+   "say": "Then Allah inspired him: Strike with your staff the sea. And it parted, and each portion was like a great towering mountain.",
+   "scene": "v3",
+   "cap": "“…and it parted, and each portion was like a great towering mountain.”",
+   "bg": 13
+  },
+  {
+   "say": "Ibn Kathir explains: Allah had commanded him to bring them there, and Allah does not go back on His promise.",
+   "cap": "Allah commanded him to bring them there, and He does not go back on His promise.",
+   "bg": 14
+  },
+  {
+   "say": "And Allah saved them, all together.",
+   "bg": 14
+  },
+  {
+   "say": "When every way looks shut, say it with certainty: my Lord is with me. He will guide me.",
+   "pause": 0.3,
+   "bg": 14
+  },
+  {
+   "say": "Save this, and send it to someone who feels trapped today.",
+   "cap": "Save this & send it to someone who feels trapped today 🤍",
+   "bg": 14
+  }
+ ],
+ "scenes": {
+  "v1": {
+   "ar": "فَلَمَّا تَرَٰٓءَا ٱلْجَمْعَانِ قَالَ أَصْحَـٰبُ مُوسَىٰٓ إِنَّا لَمُدْرَكُونَ",
+   "tr": "“And when the two companies saw one another, the companions of Moses said, ‘Indeed, we are to be overtaken!’”",
+   "ref": "Qur'an 26 : 61"
+  },
+  "v2": {
+   "ar": "قَالَ كَلَّآ ۖ إِنَّ مَعِىَ رَبِّى سَيَهْدِينِ",
+   "tr": "“[Moses] said, ‘No! Indeed, with me is my Lord; He will guide me.’”",
+   "ref": "Qur'an 26 : 62"
+  },
+  "v3": {
+   "ar": "فَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنِ ٱضْرِب\nبِّعَصَاكَ ٱلْبَحْرَ ۖ فَٱنفَلَقَ\nفَكَانَ كُلُّ فِرْقٍ كَٱلطَّوْدِ ٱلْعَظِيمِ",
+   "tr": "“Then We inspired to Moses, ‘Strike with your staff the sea,’ and it parted, and each portion was like a great towering mountain.”",
+   "ref": "Qur'an 26 : 63"
+  }
+ }
+}
