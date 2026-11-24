@@ -12,14 +12,14 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
     "en": {
-     "views": 128,
+     "views": 129,
      "reach": 115,
      "saved": 0,
      "shares": 3,
      "total_interactions": 7,
-     "avg_watch_ms": 5382
+     "avg_watch_ms": 5344
     },
     "ml": {
      "views": 4,
@@ -60,10 +60,10 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
     "en": {
-     "views": 120,
-     "reach": 102,
+     "views": 122,
+     "reach": 103,
      "saved": 1,
      "shares": 0,
      "total_interactions": 5,
@@ -110,14 +110,14 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
     "en": {
-     "views": 0,
-     "reach": 1,
+     "views": 1,
+     "reach": 2,
      "saved": 0,
      "shares": 0,
      "total_interactions": 0,
-     "avg_watch_ms": 2897
+     "avg_watch_ms": 1862
     },
     "ml": {
      "views": 147,
@@ -159,14 +159,14 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
     "en": {
-     "views": 1,
-     "reach": 1,
+     "views": 2,
+     "reach": 2,
      "saved": 0,
      "shares": 0,
      "total_interactions": 0,
-     "avg_watch_ms": 4627
+     "avg_watch_ms": 2773
     },
     "ml": {
      "views": 140,
@@ -209,30 +209,30 @@
    "yt_ml_id": "gy0BsHgMGPI",
    "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
    "metrics": {
-    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)",
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
     "en": {
-     "views": 127,
-     "reach": 108,
+     "views": 129,
+     "reach": 109,
      "saved": 1,
      "shares": 1,
      "total_interactions": 10,
-     "avg_watch_ms": 4938
+     "avg_watch_ms": 4925
     },
     "ml": {
-     "views": 0,
-     "reach": 0,
+     "views": 1,
+     "reach": 1,
      "saved": 0,
      "shares": 0,
      "total_interactions": 0,
-     "avg_watch_ms": 0
+     "avg_watch_ms": 1800
     },
     "yt_en": {
-     "views": 149
+     "views": 487
     },
     "yt_ml": {
-     "views": 348
+     "views": 1190
     },
-    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
+    "yt_checked": "2026-11-24 via API"
    }
   },
   {
@@ -273,14 +273,14 @@
      "avg_watch_ms": 0
     },
     "ml": {
-     "views": 134,
-     "reach": 127,
-     "saved": 1,
+     "views": 136,
+     "reach": 129,
+     "saved": 2,
      "shares": 1,
-     "total_interactions": 3,
-     "avg_watch_ms": 3281
+     "total_interactions": 4,
+     "avg_watch_ms": 3308
     },
-    "checked": "2026-11-23 (IG refreshed; YT not refreshed: quotaExceeded)"
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)"
    }
   },
   {
@@ -311,7 +311,33 @@
    "yt_ml_id": "YmLxxtH4YR4",
    "en_media_id": "18427157695154185",
    "en_url": "https://www.instagram.com/reel/DgFHe7ImSeZ/",
-   "posted_utc_en": "2026-11-23T10:01"
+   "posted_utc_en": "2026-11-23T10:01",
+   "metrics": {
+    "en": {
+     "views": 2,
+     "reach": 1,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 0,
+     "avg_watch_ms": 15497
+    },
+    "ml": {
+     "views": 117,
+     "reach": 107,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 7,
+     "avg_watch_ms": 3330
+    },
+    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "yt_en": {
+     "views": 70
+    },
+    "yt_ml": {
+     "views": 154
+    },
+    "yt_checked": "2026-11-24 via API"
+   }
   }
  ],
  "learnings": [
@@ -370,6 +396,10 @@
   {
    "date": "2026-11-23",
    "note": "14-day IG (refreshed today): the 3h stagger did NOT break the pattern: 22nd ML (posted first) 134 views/3.3s, EN (+3h) 0 views; 21st EN 127/ML 0; 20th ML 140/EN 1; 19th ML 147/EN 0; 18th EN 120/ML 0. Exactly one account is ~0 every day, so posting time isn't it. Voice and language always differed; the identical visuals/Arabic cards are the remaining shared signal. Applied today (one variable): distinct visuals per language (EN theme 'bahr' gold sunrise; ML 'bahr_ml' mirrored, emerald sky, higher horizon, different card tint), stagger kept. If one account still gets 0, next suspect is account-level (same app/IP linking the two accounts) and Adhil should check Account Status on whichever account is zeroed. YT stats: quotaExceeded again (Composio's YouTube API quota), so YT learning needs a Studio screenshot from Adhil."
+  },
+  {
+   "date": "2026-11-24",
+   "note": "14-day IG (refreshed today): distinct visuals per language on the 23rd did NOT break the one-account-dead pattern: ML (posted first, 06:58Z) 117 views/3.3s, EN (+3h, different theme variant) 2 views. 7/7 days exactly one account is ~0. Posting order: on the 22nd and 23rd the FIRST-posted account (ML) won; 19th/20th simultaneous (ML won), 21st simultaneous (EN won). So timing and visuals are ruled out; most likely Instagram links the two accounts (same app/owner/IP) and only distributes the first of two same-topic reels. Test today (one variable): flip the order, EN first, ML 3h+ later. If EN wins and ML dies, 'first post wins' is confirmed and the fix is different topics per language or posting on alternating days (Adhil's decision). Adhil should also check Settings > Account Status on both. YT (API, partial before quotaExceeded): 21st EN 487 / ML 1190; 23rd EN 70 / ML 154 after ~1 day: question-hook EN titles help on hope/mercy topics more than on story topics; ML Shorts still lead. Composio's YouTube API quota is exhausted again today, which may also block today's Shorts uploads."
   }
  ]
 }
