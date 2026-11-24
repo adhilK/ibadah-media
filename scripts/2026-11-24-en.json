@@ -1,0 +1,67 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "hasanah",
+ "end_bg": 16,
+ "endcard": "Save this and make it your daily dua",
+ "save": {
+  "ar": "رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً\nوَفِى ٱلْـَٔاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
+  "tr": "“Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.”",
+  "ref": "Qur'an 2 : 201"
+ },
+ "lines": [
+  {
+   "say": "Of all the duas he could make, which one did the Prophet make the most?",
+   "cap": "Of all the duas he could make, which one did the Prophet make the most?",
+   "bg": 10
+  },
+  {
+   "say": "Anas reported: this was the dua the Prophet made most often.",
+   "scene": "h1",
+   "cap": "This was the dua the Prophet made most often",
+   "bg": 11
+  },
+  {
+   "say": "Allah praises it in the Qur'an: Our Lord, give us in this world that which is good, and in the Hereafter that which is good, and protect us from the punishment of the Fire.",
+   "scene": "v1",
+   "cap": "“Our Lord, give us in this world good and in the Hereafter good…”",
+   "bg": 12
+  },
+  {
+   "say": "Ibn Kathir explains: the good of this world includes well-being, a spacious home, sufficient provision and beneficial knowledge.",
+   "cap": "The good of this world: well-being, a home, provision, beneficial knowledge",
+   "bg": 13
+  },
+  {
+   "say": "The best good of the Hereafter is Paradise, safety from the greatest terror, and an easy reckoning.",
+   "cap": "The good of the Hereafter: Paradise, safety, an easy reckoning",
+   "bg": 14
+  },
+  {
+   "say": "And protection from the Fire starts here: staying away from sins and doubtful matters.",
+   "bg": 15,
+   "cap": "Protection from the Fire starts here: stay away from sins and doubtful matters"
+  },
+  {
+   "say": "One short dua that asks for everything. Save it, and share it so someone else says it too.",
+   "cap": "One dua that asks for everything. Save it & share it 🤍",
+   "pause": 0.3,
+   "bg": 16
+  }
+ ],
+ "scenes": {
+  "h1": {
+   "ar": "اللَّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً\nوَفِي الآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ",
+   "tr": "“O Allah, our Lord! Give us that which is good in this life, that which is good in the Hereafter and save us from the torment of the Fire.”",
+   "ref": "Sahih al-Bukhari 6389"
+  },
+  "v1": {
+   "ar": "رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً\nوَفِى ٱلْـَٔاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
+   "tr": "“Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.”",
+   "ref": "Qur'an 2 : 201"
+  }
+ }
+}
