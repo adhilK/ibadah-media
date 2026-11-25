@@ -1,0 +1,67 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "sakinah",
+ "end_bg": 14,
+ "endcard": "Save this for the restless nights",
+ "save": {
+  "ar": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ\nأَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+  "tr": "“Those who have believed and whose hearts are assured by the remembrance of Allāh. Unquestionably, by the remembrance of Allāh hearts are assured.”",
+  "ref": "Qur'an 13 : 28"
+ },
+ "lines": [
+  {
+   "say": "Restless, even when nothing is wrong? Allah tells you where a heart finds rest.",
+   "cap": "Restless, even when nothing is wrong?",
+   "bg": 10
+  },
+  {
+   "say": "Allah says: Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.",
+   "scene": "v1",
+   "cap": "“By the remembrance of Allah hearts are assured”",
+   "bg": 11
+  },
+  {
+   "say": "Ibn Kathir explains: their hearts find comfort with Allah, and become tranquil when He is remembered.",
+   "cap": "Their hearts find comfort with Allah and become tranquil when He is remembered",
+   "bg": 12
+  },
+  {
+   "say": "They are pleased to have Him as their Protector and Supporter.",
+   "cap": "Pleased to have Him as their Protector and Supporter",
+   "bg": 12
+  },
+  {
+   "say": "And the Prophet said: the one who remembers his Lord, compared to the one who does not, is like the living compared to the dead.",
+   "scene": "h1",
+   "cap": "Like the living compared to the dead",
+   "bg": 13
+  },
+  {
+   "say": "So when your heart won't settle, turn back to Him: in your prayer, in your dua, in a quiet SubhanAllah.",
+   "cap": "When your heart won't settle, turn back to Him: prayer, dua, a quiet SubhanAllah",
+   "bg": 14
+  },
+  {
+   "say": "Save this for the restless nights, and share it with someone who needs rest.",
+   "cap": "Save this for the restless nights & share it 🤍",
+   "pause": 0.3,
+   "bg": 14
+  }
+ ],
+ "scenes": {
+  "v1": {
+   "ar": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ\nأَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+   "tr": "“Those who have believed and whose hearts are assured by the remembrance of Allāh. Unquestionably, by the remembrance of Allāh hearts are assured.”",
+   "ref": "Qur'an 13 : 28"
+  },
+  "h1": {
+   "ar": "مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لاَ يَذْكُرُ\nمَثَلُ الْحَىِّ وَالْمَيِّتِ",
+   "tr": "“The example of the one who celebrates the Praises of his Lord (Allah) in comparison to the one who does not celebrate the Praises of his Lord, is that of a living creature compared to a dead one.”",
+   "ref": "Sahih al-Bukhari 6407"
+  }
+ }
+}

@@ -12,7 +12,7 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "checked": "2026-11-25 (IG + YT via API)",
     "en": {
      "views": 129,
      "reach": 115,
@@ -30,12 +30,13 @@
      "avg_watch_ms": 17509
     },
     "yt_en": {
-     "views": 20
+     "views": 20,
+     "likes": 0
     },
     "yt_ml": {
-     "views": 1500
-    },
-    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
+     "views": 1539,
+     "likes": 39
+    }
    },
    "yt_en_id": "_xzaY7EzZ6Y",
    "yt_ml_id": "zOH3G2-hKfM",
@@ -60,7 +61,7 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "checked": "2026-11-25 (IG + YT via API)",
     "en": {
      "views": 122,
      "reach": 103,
@@ -78,12 +79,13 @@
      "avg_watch_ms": 0
     },
     "yt_en": {
-     "views": 63
+     "views": 65,
+     "likes": 12
     },
     "yt_ml": {
-     "views": 1100
-    },
-    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
+     "views": 1193,
+     "likes": 18
+    }
    }
   },
   {
@@ -110,7 +112,7 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "checked": "2026-11-25 (IG + YT via API)",
     "en": {
      "views": 1,
      "reach": 2,
@@ -128,12 +130,13 @@
      "avg_watch_ms": 5080
     },
     "yt_en": {
-     "views": 19
+     "views": 19,
+     "likes": 0
     },
     "yt_ml": {
-     "views": 1200
-    },
-    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
+     "views": 1313,
+     "likes": 29
+    }
    }
   },
   {
@@ -159,7 +162,7 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "checked": "2026-11-25 (IG + YT via API)",
     "en": {
      "views": 2,
      "reach": 2,
@@ -177,12 +180,13 @@
      "avg_watch_ms": 4680
     },
     "yt_en": {
-     "views": 12
+     "views": 12,
+     "likes": 0
     },
     "yt_ml": {
-     "views": 1800
-    },
-    "yt_checked": "2026-11-22 from Adhil's YouTube Studio screenshot (API quotaExceeded); ML 1.xK values rounded"
+     "views": 2023,
+     "likes": 45
+    }
    }
   },
   {
@@ -209,7 +213,7 @@
    "yt_ml_id": "gy0BsHgMGPI",
    "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
    "metrics": {
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "checked": "2026-11-25 (IG + YT via API)",
     "en": {
      "views": 129,
      "reach": 109,
@@ -227,12 +231,13 @@
      "avg_watch_ms": 1800
     },
     "yt_en": {
-     "views": 487
+     "views": 487,
+     "likes": 47
     },
     "yt_ml": {
-     "views": 1190
-    },
-    "yt_checked": "2026-11-24 via API"
+     "views": 1190,
+     "likes": 17
+    }
    }
   },
   {
@@ -280,7 +285,15 @@
      "total_interactions": 4,
      "avg_watch_ms": 3308
     },
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)"
+    "checked": "2026-11-25 (IG + YT via API)",
+    "yt_en": {
+     "views": 367,
+     "likes": 26
+    },
+    "yt_ml": {
+     "views": 916,
+     "likes": 12
+    }
    }
   },
   {
@@ -329,14 +342,15 @@
      "total_interactions": 7,
      "avg_watch_ms": 3330
     },
-    "checked": "2026-11-24 (IG refreshed; YT refreshed only for 21st/23rd before quotaExceeded)",
+    "checked": "2026-11-25 (IG + YT via API)",
     "yt_en": {
-     "views": 70
+     "views": 70,
+     "likes": 4
     },
     "yt_ml": {
-     "views": 154
-    },
-    "yt_checked": "2026-11-24 via API"
+     "views": 157,
+     "likes": 4
+    }
    }
   },
   {
@@ -367,7 +381,56 @@
    "yt_ml_id": "IHvHZ4AdawM",
    "ml_media_id": "17882289651632601",
    "ml_url": "https://www.instagram.com/reel/DgIbxlnGXh7/",
-   "posted_utc_ml": "2026-11-24T16:56"
+   "posted_utc_ml": "2026-11-24T16:56",
+   "metrics": {
+    "en": {
+     "views": 119,
+     "reach": 99,
+     "saved": 2,
+     "shares": 0,
+     "total_interactions": 12,
+     "avg_watch_ms": 6415
+    },
+    "yt_en": {
+     "views": 114,
+     "likes": 11
+    },
+    "ml": {
+     "views": 137,
+     "reach": 118,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 2,
+     "avg_watch_ms": 5713
+    },
+    "yt_ml": {
+     "views": 190,
+     "likes": 6
+    },
+    "checked": "2026-11-25 (IG + YT via API)"
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "type": "ayah",
+   "topic": "Hearts find rest in the remembrance of Allah (Qur'an 13:28)",
+   "source": "Qur'an 13:28 via api.quran.com, opened today (Uthmani; Saheeh Intl id 20, whose text ends with a closing quote mark that belongs to the quotation opened in 13:27, dropped on the card; Malayalam id 37, card exact, spoken line drops the leading 'അതായത്' and uses 'ചെയ്യുന്നവർ' so it reads as a sentence); Tafsir Ibn Kathir (abridged) on 13:27-29 via api.quran.com tafsir 169 ('their hearts find comfort on the side of Allah, become tranquil when He is remembered and pleased to have Him as their Protector and Supporter'); Sahih al-Bukhari 6407 (sunnah.com opened today via fetch: narrated Abu Musa, Book 80 Hadith 102, chapter 'The superiority of Dhikr of Allah'; Arabic matn copied from the page). dorar.net not fetched; grading rests on Sahih al-Bukhari.",
+   "hook": {
+    "en": "Restless, even when nothing is wrong? Allah tells you where a heart finds rest.",
+    "ml": "ഒരു പ്രശ്നവുമില്ലാഞ്ഞിട്ടും മനസ്സിന് സമാധാനമില്ലേ? (cap: മനസ്സിന് ഒരു സമാധാനവുമില്ലേ?)"
+   },
+   "len_s": {
+    "en": 51.6,
+    "ml": 61.9
+   },
+   "motion": "Theme 'sakinah' (engine/themes/sakinah.glsl): a night lake under racing clouds, wind breaking the moon's reflection into shards (hook); NEW motion 'the settling mirror': the chop calms over ~6 s while 13:28 is read and the shards draw back into one clear moon path; drops of light sending slow gold rings across the still lake (Ibn Kathir); a gold front sweeping the dry, cracked shore and green life rising behind it (living vs dead, Bukhari 6407); first light mirrored on the still lake (CTA/end card).",
+   "visual_variant": "ML uses 'sakinah_ml' (mirrored, emerald sky, higher horizon, emerald card).",
+   "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
+   "posting_plan": "after approval: IG EN first, IG ML 3+ hours later (same as the 24th, which got both accounts distributed); YT both",
+   "caption_en": "Restless, even when nothing is wrong? 🤍\n\n\"Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.\" (Qur'an 13:28)\nTranslation: Saheeh International\n\nIbn Kathir: their hearts find comfort with Allah, become tranquil when He is remembered, and are pleased to have Him as their Protector and Supporter.\n\nThe Prophet ﷺ said: \"The example of the one who celebrates the Praises of his Lord in comparison to the one who does not, is that of a living creature compared to a dead one.\" (Sahih al-Bukhari 6407)\n\nWhen your heart won't settle, turn back to Him: in your prayer, in your dua, in a quiet SubhanAllah. Save this for the restless nights and share it with someone who needs rest.\n\n#islamicreminder #quran #dhikr #hadith #sunnah",
+   "caption_ml": "മനസ്സിന് ഒരു സമാധാനവുമില്ലേ? 🤍\n\n\"വിശ്വസിക്കുകയും അല്ലാഹുവെ പറ്റിയുള്ള ഓര്‍മ കൊണ്ട് മനസ്സുകള്‍ ശാന്തമായിത്തീരുകയും ചെയ്യുന്നവര്‍. ശ്രദ്ധിക്കുക; അല്ലാഹുവെപ്പറ്റിയുള്ള ഓര്‍മ കൊണ്ടത്രെ മനസ്സുകള്‍ ശാന്തമായിത്തീരുന്നത്‌.\" (ഖുർആൻ 13:28)\n\nഇബ്നു കസീർ: അവരുടെ ഹൃദയങ്ങൾ അല്ലാഹുവിങ്കൽ ആശ്വാസം കണ്ടെത്തുന്നു; അവനെ ഓർക്കുമ്പോൾ അവ ശാന്തമാകുന്നു; അവനെ സംരക്ഷകനും സഹായിയുമായി ലഭിച്ചതിൽ അവർ തൃപ്തരാണ്.\n\nനബി ﷺ പറഞ്ഞു: \"തന്റെ രക്ഷിതാവിനെ സ്മരിക്കുന്നവന്റെയും സ്മരിക്കാത്തവന്റെയും ഉപമ, ജീവനുള്ളവന്റെയും മരിച്ചവന്റെയും ഉപമയാണ്.\" (സ്വഹീഹുൽ ബുഖാരി 6407)\n\nമനസ്സ് അസ്വസ്ഥമാകുമ്പോൾ അവനിലേക്ക് മടങ്ങൂ: നിസ്കാരത്തിൽ, ദുആയിൽ, ഒരു ചെറിയ സുബ്ഹാനല്ലാഹിൽ. അസ്വസ്ഥമായ രാത്രികൾക്കായി സേവ് ചെയ്യൂ; സമാധാനം തേടുന്ന ഒരാൾക്ക് ഷെയർ ചെയ്യൂ.\n\n#islamicreminder #quran #dhikr #malayalamislamic #ഇസ്ലാം",
+   "yt_en_title": "Restless Even When Nothing Is Wrong? | Qur'an 13:28 #Shorts",
+   "yt_ml_title": "മനസ്സിന് സമാധാനമില്ലേ? | ഖുർആൻ 13:28 | Malayalam #Shorts"
   }
  ],
  "learnings": [
@@ -430,6 +493,10 @@
   {
    "date": "2026-11-24",
    "note": "14-day IG (refreshed today): distinct visuals per language on the 23rd did NOT break the one-account-dead pattern: ML (posted first, 06:58Z) 117 views/3.3s, EN (+3h, different theme variant) 2 views. 7/7 days exactly one account is ~0. Posting order: on the 22nd and 23rd the FIRST-posted account (ML) won; 19th/20th simultaneous (ML won), 21st simultaneous (EN won). So timing and visuals are ruled out; most likely Instagram links the two accounts (same app/owner/IP) and only distributes the first of two same-topic reels. Test today (one variable): flip the order, EN first, ML 3h+ later. If EN wins and ML dies, 'first post wins' is confirmed and the fix is different topics per language or posting on alternating days (Adhil's decision). Adhil should also check Settings > Account Status on both. YT (API, partial before quotaExceeded): 21st EN 487 / ML 1190; 23rd EN 70 / ML 154 after ~1 day: question-hook EN titles help on hope/mercy topics more than on story topics; ML Shorts still lead. Composio's YouTube API quota is exhausted again today, which may also block today's Shorts uploads."
+  },
+  {
+   "date": "2026-11-25",
+   "note": "14-day IG (refreshed today): on the 24th, for the first time in 8 days, BOTH accounts were distributed: EN (posted FIRST, 13:51Z) 119 views/6.4s avg watch (best EN watch time yet, 2 saves, 12 interactions) and ML (+3h, 16:56Z) 137 views/5.7s (best ML watch time since the 17th). So 'first post wins' is NOT confirmed; the EN-first + 3h stagger + distinct visuals combination worked once. Apply today: change nothing in the posting setup (EN first, ML +3h, distinct visuals per language) to see if it repeats; content variable stays the question/feeling hook. YT (API, full refresh): ML Shorts still lead (20th 2,023; 17th 1,539; 22nd 916) but recent ML Shorts are lower (23rd 157, 24th 190 after ~1 day); EN question-hook titles keep EN at 70-487 vs 12-65 before. Both 24th Shorts (114 EN / 190 ML) are close, so YT ML's lead is narrowing; keep watching before changing YT titles."
   }
  ]
 }
