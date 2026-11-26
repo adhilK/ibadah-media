@@ -12,7 +12,7 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 129,
      "reach": 115,
@@ -61,7 +61,7 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 122,
      "reach": 103,
@@ -112,7 +112,7 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 1,
      "reach": 2,
@@ -162,7 +162,7 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 2,
      "reach": 2,
@@ -213,7 +213,7 @@
    "yt_ml_id": "gy0BsHgMGPI",
    "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
    "metrics": {
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 129,
      "reach": 109,
@@ -285,7 +285,7 @@
      "total_interactions": 4,
      "avg_watch_ms": 3308
     },
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "yt_en": {
      "views": 367,
      "likes": 26
@@ -342,7 +342,7 @@
      "total_interactions": 7,
      "avg_watch_ms": 3330
     },
-    "checked": "2026-11-25 (IG + YT via API)",
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "yt_en": {
      "views": 70,
      "likes": 4
@@ -384,30 +384,30 @@
    "posted_utc_ml": "2026-11-24T16:56",
    "metrics": {
     "en": {
-     "views": 119,
-     "reach": 99,
+     "views": 120,
+     "reach": 100,
      "saved": 2,
      "shares": 0,
      "total_interactions": 12,
-     "avg_watch_ms": 6415
+     "avg_watch_ms": 6400
     },
     "yt_en": {
      "views": 114,
      "likes": 11
     },
     "ml": {
-     "views": 137,
-     "reach": 118,
+     "views": 141,
+     "reach": 120,
      "saved": 0,
      "shares": 0,
      "total_interactions": 2,
-     "avg_watch_ms": 5713
+     "avg_watch_ms": 5759
     },
     "yt_ml": {
      "views": 190,
      "likes": 6
     },
-    "checked": "2026-11-25 (IG + YT via API)"
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
    }
   },
   {
@@ -436,7 +436,75 @@
    "yt_en_id": "pKOnP1-9vYo",
    "yt_ml_id": "KrfLfeXkpaY",
    "ml_media_id": "17915982585515419",
-   "ml_url": "https://www.instagram.com/reel/DgKOW5ZgEy1/"
+   "ml_url": "https://www.instagram.com/reel/DgKOW5ZgEy1/",
+   "metrics": {
+    "en": {
+     "views": 65,
+     "reach": 55,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 1,
+     "avg_watch_ms": 3126
+    },
+    "ml": {
+     "views": 133,
+     "reach": 117,
+     "saved": 1,
+     "shares": 0,
+     "total_interactions": 2,
+     "avg_watch_ms": 6868
+    },
+    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+   }
+  },
+  {
+   "date": "2026-11-26",
+   "type": "ayah",
+   "topic": "'Indeed I am near': the dua verse placed among the fasting verses (Qur'an 2:186) with 40:60",
+   "rotation_note": "Rotation called for a hadith today, but sunnah.com could not be opened in this unattended run (the fetch permission prompt timed out; dorar.net is blocked from the shell), so per PLAYBOOK the topic was switched to one fully verifiable on api.quran.com. Next run: hadith.",
+   "source": "Qur'an 2:186 and 40:60 via api.quran.com, opened today (Uthmani text; Saheeh Intl id 20; Malayalam id 37, cards copied exactly incl. the translator's '(എന്ന് പറയുക.)'); Qur'an 2:183, 2:185, 2:187 via api.quran.com, opened today, to confirm 2:186 sits inside the fasting verses; Tafsir Ibn Kathir (abridged) on 40:60 via api.quran.com tafsir 169: 'By His grace and kindness, Allah encourages His servants to call upon Him, and He guarantees to respond', and Sufyan ath-Thawri's saying 'O You Who love most those who ask of You' (recorded by Ibn Abi Hatim, per Ibn Kathir). Hadiths quoted in Ibn Kathir on 2:186 were left out because they couldn't be checked on sunnah.com today.",
+   "hook": {
+    "en": "Right in the middle of the Qur'an's verses on fasting, there's one verse that isn't a rule at all.",
+    "ml": "ഖുർആനിൽ നോമ്പിന്റെ നിയമങ്ങൾക്കിടയിൽ ഒരു ആയത്തുണ്ട്. അതൊരു നിയമമല്ല."
+   },
+   "hook_style": "curiosity (promised payoff) instead of feeling question — today's single content variable",
+   "len_s": {
+    "en": 55.7,
+    "ml": 64.7
+   },
+   "motion": "Theme 'qarib' (engine/themes/qarib.glsl): thin crescent over a vast night desert with one tiny far light (hook); NEW motion 'the closing distance': a dolly forward with 4-layer dune parallax while 2:186 is read, the far light growing until it glows warm right in front of the viewer; for 40:60 a gold thread rises from the near dune into the sky (the call) and a pulse of light comes back down and blooms on the ground (the response); many small lights rising from the dunes (Ibn Kathir/Sufyan); pre-dawn glow for CTA/end card.",
+   "visual_variant": "ML uses 'qarib_ml' (mirrored, emerald sky, higher horizon, emerald card).",
+   "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
+   "posting_plan": "after approval: IG EN first, IG ML 3+ hours later (same as 24th/25th, both distributed); YT both",
+   "caption_en": "Right in the middle of the Qur'an's verses on fasting, there's one verse that isn't a rule at all. 🤍\n\n\"And when My servants ask you, [O Muḥammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.\" (Qur'an 2:186)\n\"And your Lord says, 'Call upon Me; I will respond to you.'\" (Qur'an 40:60)\nTranslation: Saheeh International\n\nIbn Kathir on 40:60: by His grace and kindness, Allah encourages His servants to call upon Him, and He guarantees to respond. Sufyan ath-Thawri used to say: \"O You Who love most those who ask of You.\"\n\nWhatever you're carrying tonight, don't carry it alone. Ask Him. He is near. Save this for the day you feel unheard, and send it to someone who needs it.\n\n#islamicreminder #quran #dua #quranverses #islam",
+   "caption_ml": "ഖുർആനിൽ നോമ്പിന്റെ നിയമങ്ങൾക്കിടയിൽ ഒരു ആയത്തുണ്ട്. അതൊരു നിയമമല്ല. 🤍\n\n\"നിന്നോട് എന്റെ ദാസന്‍മാര്‍ എന്നെപ്പറ്റി ചോദിച്ചാല്‍ ഞാന്‍ (അവര്‍ക്ക് ഏറ്റവും) അടുത്തുള്ളവനാകുന്നു (എന്ന് പറയുക.) പ്രാര്‍ത്ഥിക്കുന്നവന്‍ എന്നെ വിളിച്ച് പ്രാര്‍ത്ഥിച്ചാല്‍ ഞാന്‍ ആ പ്രാര്‍ത്ഥനയ്ക്ക് ഉത്തരം നല്‍കുന്നതാണ്‌.\" (ഖുർആൻ 2:186)\n\"നിങ്ങളുടെ രക്ഷിതാവ് പറഞ്ഞിരിക്കുന്നു: നിങ്ങള്‍ എന്നോട് പ്രാര്‍ത്ഥിക്കൂ. ഞാന്‍ നിങ്ങള്‍ക്ക് ഉത്തരം നല്‍കാം.\" (ഖുർആൻ 40:60)\n\nഇബ്നു കസീർ (40:60): തന്റെ ഔദാര്യവും കനിവും കൊണ്ട് അല്ലാഹു അടിമകളെ ദുആ ചെയ്യാൻ പ്രേരിപ്പിക്കുന്നു; ഉത്തരം നൽകുമെന്ന് ഉറപ്പും നൽകുന്നു. സുഫ്‌യാനുസ്സൗരി ഇങ്ങനെ വിളിക്കാറുണ്ടായിരുന്നു: \"തന്നോട് ചോദിക്കുന്നവരെ ഏറ്റവും ഇഷ്ടപ്പെടുന്നവനേ.\"\n\nഉള്ളിലെ ഭാരം ഒറ്റയ്ക്ക് ചുമക്കേണ്ട. അവനോട് ചോദിക്കൂ. അവൻ അടുത്തുണ്ട്. സേവ് ചെയ്യൂ, ആവശ്യമുള്ള ഒരാൾക്ക് അയച്ചുകൊടുക്കൂ.\n\n#islamicreminder #quran #dua #malayalamislamic #ഇസ്ലാം",
+   "yt_en_title": "The One Verse Among the Fasting Rules That Isn't a Rule | Qur'an 2:186 #Shorts",
+   "yt_ml_title": "നോമ്പിന്റെ ആയത്തുകൾക്കിടയിലെ ആ ആയത്ത് | ഖുർആൻ 2:186 | Malayalam #Shorts",
+   "yt_en_description": "Right in the middle of the Qur'an's verses on fasting, there's one verse that isn't a rule at all. 🤍\n\n\"And when My servants ask you, [O Muḥammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.\" (Qur'an 2:186)\n\"And your Lord says, 'Call upon Me; I will respond to you.'\" (Qur'an 40:60)\nTranslation: Saheeh International\n\nIbn Kathir on 40:60: by His grace and kindness, Allah encourages His servants to call upon Him, and He guarantees to respond. Sufyan ath-Thawri used to say: \"O You Who love most those who ask of You.\"\n\nWhatever you're carrying tonight, don't carry it alone. Ask Him. He is near. Save this for the day you feel unheard, and send it to someone who needs it.\n\n#islamicreminder #quran #dua #quranverses #islam\n\nOne authentic reminder every day — every source cited.\n#Shorts",
+   "yt_ml_description": "ഖുർആനിൽ നോമ്പിന്റെ നിയമങ്ങൾക്കിടയിൽ ഒരു ആയത്തുണ്ട്. അതൊരു നിയമമല്ല. 🤍\n\n\"നിന്നോട് എന്റെ ദാസന്‍മാര്‍ എന്നെപ്പറ്റി ചോദിച്ചാല്‍ ഞാന്‍ (അവര്‍ക്ക് ഏറ്റവും) അടുത്തുള്ളവനാകുന്നു (എന്ന് പറയുക.) പ്രാര്‍ത്ഥിക്കുന്നവന്‍ എന്നെ വിളിച്ച് പ്രാര്‍ത്ഥിച്ചാല്‍ ഞാന്‍ ആ പ്രാര്‍ത്ഥനയ്ക്ക് ഉത്തരം നല്‍കുന്നതാണ്‌.\" (ഖുർആൻ 2:186)\n\"നിങ്ങളുടെ രക്ഷിതാവ് പറഞ്ഞിരിക്കുന്നു: നിങ്ങള്‍ എന്നോട് പ്രാര്‍ത്ഥിക്കൂ. ഞാന്‍ നിങ്ങള്‍ക്ക് ഉത്തരം നല്‍കാം.\" (ഖുർആൻ 40:60)\n\nഇബ്നു കസീർ (40:60): തന്റെ ഔദാര്യവും കനിവും കൊണ്ട് അല്ലാഹു അടിമകളെ ദുആ ചെയ്യാൻ പ്രേരിപ്പിക്കുന്നു; ഉത്തരം നൽകുമെന്ന് ഉറപ്പും നൽകുന്നു. സുഫ്‌യാനുസ്സൗരി ഇങ്ങനെ വിളിക്കാറുണ്ടായിരുന്നു: \"തന്നോട് ചോദിക്കുന്നവരെ ഏറ്റവും ഇഷ്ടപ്പെടുന്നവനേ.\"\n\nഉള്ളിലെ ഭാരം ഒറ്റയ്ക്ക് ചുമക്കേണ്ട. അവനോട് ചോദിക്കൂ. അവൻ അടുത്തുണ്ട്. സേവ് ചെയ്യൂ, ആവശ്യമുള്ള ഒരാൾക്ക് അയച്ചുകൊടുക്കൂ.\n\n#islamicreminder #quran #dua #malayalamislamic #ഇസ്ലാം\n\nOne authentic reminder every day — every source cited.\n#Shorts",
+   "yt_tags_en": [
+    "Quran",
+    "Quran 2:186",
+    "dua",
+    "Islamic reminder",
+    "Allah is near",
+    "Ibn Kathir",
+    "Islam",
+    "Shorts"
+   ],
+   "yt_tags_ml": [
+    "Malayalam Islamic",
+    "Quran Malayalam",
+    "dua",
+    "Quran 2:186",
+    "Islamic reminder",
+    "ഇസ്ലാം",
+    "Shorts"
+   ],
+   "video_urls": {
+    "en": "https://raw.githubusercontent.com/adhilK/ibadah-media/main/reels/2026-11-26/ibadah-daily.mp4",
+    "ml": "https://raw.githubusercontent.com/adhilK/ibadah-media/main/reels/2026-11-26/ibadah-malayalam.mp4"
+   }
   }
  ],
  "learnings": [
@@ -503,6 +571,10 @@
   {
    "date": "2026-11-25",
    "note": "14-day IG (refreshed today): on the 24th, for the first time in 8 days, BOTH accounts were distributed: EN (posted FIRST, 13:51Z) 119 views/6.4s avg watch (best EN watch time yet, 2 saves, 12 interactions) and ML (+3h, 16:56Z) 137 views/5.7s (best ML watch time since the 17th). So 'first post wins' is NOT confirmed; the EN-first + 3h stagger + distinct visuals combination worked once. Apply today: change nothing in the posting setup (EN first, ML +3h, distinct visuals per language) to see if it repeats; content variable stays the question/feeling hook. YT (API, full refresh): ML Shorts still lead (20th 2,023; 17th 1,539; 22nd 916) but recent ML Shorts are lower (23rd 157, 24th 190 after ~1 day); EN question-hook titles keep EN at 70-487 vs 12-65 before. Both 24th Shorts (114 EN / 190 ML) are close, so YT ML's lead is narrowing; keep watching before changing YT titles."
+  },
+  {
+   "date": "2026-11-26",
+   "note": "14-day IG (refreshed today): EN-first + 3h stagger + distinct visuals got BOTH accounts distributed for a 2nd day running (25th: EN 65 views/55 reach at ~24h, ML 133 views with 6.9s avg watch, the best ML watch time since the 17th). Posting setup now 2/2, so keep it unchanged. Content signal: EN watch time fell from 6.4s (24th, curiosity hook 'Of all the duas he could make...') to 3.1s (25th, feeling hook 'Restless, even when nothing is wrong?'), and EN's other strong day (21st, 4.9s) was also a direct question about the viewer. Apply today (one variable, EN+ML hook): a curiosity hook that promises a specific, surprising payoff from the hadith ('one small act...') instead of a feeling question; posting setup unchanged. YT: Composio's YouTube API quota exceeded again (403 quotaExceeded), no fresh Shorts stats; Shorts uploads may also fail today."
   }
  ]
 }

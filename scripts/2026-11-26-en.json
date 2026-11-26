@@ -1,0 +1,71 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "qarib",
+ "end_bg": 14,
+ "endcard": "Save this for the day you feel unheard",
+ "save": {
+  "ar": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ\nأُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ",
+  "tr": "“And when My servants ask you, [O Muḥammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.”",
+  "ref": "Qur'an 2 : 186"
+ },
+ "lines": [
+  {
+   "say": "Right in the middle of the Qur'an's verses on fasting, there's one verse that isn't a rule at all.",
+   "cap": "In the middle of the fasting verses, one verse isn't a rule at all",
+   "bg": 10
+  },
+  {
+   "say": "It's Allah telling you how near He is.",
+   "bg": 10
+  },
+  {
+   "say": "Allah says: And when My servants ask you concerning Me, indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.",
+   "scene": "v1",
+   "cap": "“Indeed I am near. I respond to the invocation of the supplicant”",
+   "bg": 11
+  },
+  {
+   "say": "And in another verse: Your Lord says, Call upon Me; I will respond to you.",
+   "scene": "v2",
+   "cap": "“Call upon Me; I will respond to you”",
+   "bg": 12
+  },
+  {
+   "say": "Ibn Kathir explains: by His grace and kindness, Allah encourages His servants to call upon Him, and He guarantees to respond.",
+   "cap": "Allah encourages His servants to call upon Him, and He guarantees to respond",
+   "bg": 13
+  },
+  {
+   "say": "Sufyan ath-Thawri used to call Him: O You who love most those who ask of You.",
+   "cap": "“O You Who love most those who ask of You”",
+   "bg": 13
+  },
+  {
+   "say": "So whatever you're carrying tonight, don't carry it alone. Ask Him. He is near.",
+   "cap": "Don't carry it alone. Ask Him. He is near.",
+   "bg": 14
+  },
+  {
+   "say": "Save this for the day you feel unheard, and send it to someone who needs it.",
+   "cap": "Save this for the day you feel unheard & send it 🤍",
+   "pause": 0.3,
+   "bg": 14
+  }
+ ],
+ "scenes": {
+  "v1": {
+   "ar": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ\nأُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ",
+   "tr": "“And when My servants ask you, [O Muḥammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.”",
+   "ref": "Qur'an 2 : 186"
+  },
+  "v2": {
+   "ar": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ",
+   "tr": "“And your Lord says, ‘Call upon Me; I will respond to you.’”",
+   "ref": "Qur'an 40 : 60"
+  }
+ }
+}
