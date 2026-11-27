@@ -44,15 +44,15 @@ Check `log.json` so no topic or source repeats within 60 days. Lean towards what
 
 ## 4. Build
 ```
-pip install playwright --break-system-packages && python3 -m playwright install chromium
-export GOOGLE_TTS_KEY=...        # given in the scheduled task prompt
+pip install playwright kokoro-onnx soundfile --break-system-packages && python3 -m playwright install chromium
+export GOOGLE_TTS_KEY=...        # given in the scheduled task prompt (Malayalam voice only)
 mkdir -p work/en work/ml && cp scripts/DATE-en.json work/en/script.json && cp scripts/DATE-ml.json work/ml/script.json
 PREVIEW=1.5,10,20,30 python3 engine/build.py work/en   # look at prev_*.jpg first
 python3 engine/build.py work/en && python3 engine/build.py work/ml
 ```
 A full render takes ~20 min and background jobs can be killed. Run each render in the foreground as `RESUME=1 timeout 580 python3 engine/build.py work/en` and repeat the same command until it prints `wrote`; RESUME keeps finished frames and the voiceover. (Run the first pass without RESUME so the voiceover is generated.)
-Voices: Google Chirp 3 HD `Charon` (en-US / ml-IN) only — free tier covers this volume. Never use Gemini-TTS or Studio voices (not free).
-Transliterated Arabic in English `say` lines: join short particles to the next word ("wabihamdihi", not "wa bi hamdihi"); the en-US voice spells a lone "wa" as "W A". Check the transliteration line's audio before the full render.
+Voices (Adhil, 2026-11-27): **English = Kokoro** (Kokoro-82M via kokoro-onnx, runs locally, free), voice `am_michael`; `af_heart` is the female alternative. build.py downloads the model (~350 MB) from GitHub releases on first use (Hugging Face is blocked in the sandbox). **Malayalam = Google Chirp 3 HD `ml-IN Charon`**, because Kokoro has no Malayalam; free tier covers this volume. Never use Gemini-TTS or Studio voices (not free).
+Transliterated Arabic in English `say` lines: join short particles to the next word ("wabihamdihi", not "wa bi hamdihi"). Listen to the transliteration line's audio before the full render and respell it if Kokoro mispronounces it.
 QA before upload: view frames at every caption, verse card and the end card; no text may overflow or overlap.
 
 **Content-specific design (Adhil, 2026-11-19; replaces the generic dunes/arches/lanterns look):** every video gets its own visual theme designed from its content — never reuse the same scene set for a new topic.

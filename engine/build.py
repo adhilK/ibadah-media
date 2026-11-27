@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Build one faceless Islamic reel.
 usage: python3 engine/build.py <reel_dir>   (reel_dir holds script.json)
-env: GOOGLE_TTS_KEY (optional; without it a silent timing preview is made)
+env: GOOGLE_TTS_KEY (Malayalam voice; without it a silent ml timing preview is made)
+English narration uses Kokoro (local, free); model files download from GitHub on first use.
 """
 import json, os, sys, base64, subprocess, urllib.request, wave, contextlib, shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-VOICES = {  # Google Cloud TTS voices; override per script with "voice"
-    "en": {"languageCode": "en-US", "name": "en-US-Chirp3-HD-Charon"},
+VOICES = {  # override per script with "voice"
+    "en": {"engine": "kokoro", "name": "am_michael", "rate": 1.0},  # Kokoro voice; "af_heart" = female alt
+    # Kokoro has no Malayalam, so ml stays on Google Chirp 3 HD Charon
     "ml": {"languageCode": "ml-IN", "name": "ml-IN-Chirp3-HD-Charon"},
 }
 FALLBACK = {"en": "en-US-Neural2-D", "ml": "ml-IN-Wavenet-D"}
@@ -21,8 +23,31 @@ def tts(text, lang, voice, out):
     ck = cache / (hashlib.sha1(f"{voice['name']}|{voice.get('rate',0.95)}|{text}".encode()).hexdigest() + ".wav")
     if ck.exists():
         shutil.copy(ck, out); return
+    if voice.get("engine") == "kokoro":
+        _kokoro(text, voice, out); shutil.copy(out, ck); return
     _tts(text, lang, voice, out)
     if os.environ.get("GOOGLE_TTS_KEY"): shutil.copy(out, ck)
+
+
+KOKORO_DIR = Path(os.environ.get("KOKORO_DIR", Path.home() / ".cache" / "kokoro"))
+KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+_KOKORO = None
+
+
+def _kokoro(text, voice, out):
+    """Kokoro-82M via kokoro-onnx (pip install kokoro-onnx soundfile). Model is on GitHub, not Hugging Face."""
+    global _KOKORO
+    if _KOKORO is None:
+        KOKORO_DIR.mkdir(parents=True, exist_ok=True)
+        for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+            if not (KOKORO_DIR / f).exists():
+                print("downloading", f)
+                subprocess.run(["curl", "-sSL", "--fail", "-o", str(KOKORO_DIR / f), KOKORO_URL + f], check=True)
+        from kokoro_onnx import Kokoro
+        _KOKORO = Kokoro(str(KOKORO_DIR / "kokoro-v1.0.onnx"), str(KOKORO_DIR / "voices-v1.0.bin"))
+    import soundfile as sf
+    audio, sr = _KOKORO.create(text, voice=voice["name"], speed=voice.get("rate", 1.0), lang="en-us")
+    sf.write(out, audio, sr, subtype="PCM_16")
 
 
 def _tts(text, lang, voice, out):
