@@ -532,6 +532,30 @@
     },
     "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
    }
+  },
+  {
+   "date": "2026-11-27",
+   "type": "hadith",
+   "topic": "The deeds Allah loves most: the most constant, even if small (Bukhari 6465, Muslim 783)",
+   "source": "Sahih al-Bukhari 6465 (sunnah.com, opened today: Book 81 Hadith 54; 'The most regular constant deeds even though they may be few' + 'Don't take upon yourselves, except the deeds which are within your ability'); Sahih Muslim 783b (sunnah.com, opened today: Book 6 Hadith 258; 'The acts most pleasing to Allah are those which are done continuously, even if they are small. and when 'A'isha did any act she did it continuously'); also read Bukhari 6464, 6462, Muslim 782b, Riyad as-Salihin 142 (same meaning). Grading cross-checked on dorar.net (dorar_api, opened today): Muslim 783 [صحيح], Bukhari 6464 & 6465 [صحيح]. Malayalam card text is a meaning translation of the hadith (no official Malayalam hadith translation used).",
+   "hook": {
+    "en": "The deed Allah loves most isn't the biggest one.",
+    "ml": "അല്ലാഹുവിന് ഏറ്റവും ഇഷ്ടമുള്ള അമൽ, ഏറ്റവും വലിയ അമൽ അല്ല."
+   },
+   "hook_style": "curiosity (kept from the 26th, which doubled EN watch time)",
+   "len_s": {
+    "en": 37.0,
+    "ml": 41.3
+   },
+   "length_test": "today's single variable: back inside 30-45s (26th was 55.7/64.7s)",
+   "motion": "Theme 'dawam' (engine/themes/dawam.glsl): hook = a big gold flare bursts and fades while one tiny lamp on the shore keeps burning; hadith card = a single drop forms under a rock overhang and falls into a still pool every 1.45s, gold rings spreading; 'within your ability' = the small lamp burning steady with its reflection; NEW motion 'accumulation': each drop that lands adds a little more gold light to the pool ('Aishah kept doing it'); CTA/end = pre-dawn, small lamps along the shore lighting one by one like days kept.",
+   "visual_variant": "ML uses 'dawam_ml' (mirrored, emerald sky, lower shoreline, emerald card).",
+   "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
+   "posting_plan": "after approval: IG EN first, IG ML 3+ hours later; YT both",
+   "caption_en": "The deed Allah loves most isn't the biggest one. 🤍\n\nThe Prophet ﷺ was asked which deeds are loved most by Allah. He said: \"The most regular constant deeds even though they may be few.\" And he said: \"Don't take upon yourselves, except the deeds which are within your ability.\" (Sahih al-Bukhari 6465)\n\n\"The acts most pleasing to Allah are those which are done continuously, even if they are small.\" And when 'A'isha did any act, she did it continuously. (Sahih Muslim 783)\n\nDon't wait for something big. Pick one small deed today, and don't let it go.\n\nSave this, and send it to someone who wants to start again.\n\n#islamicreminder #hadith #sunnah #islam #muslim",
+   "caption_ml": "അല്ലാഹുവിന് ഏറ്റവും ഇഷ്ടമുള്ള അമൽ, ഏറ്റവും വലിയ അമൽ അല്ല. 🤍\n\nഏത് അമലാണ് അല്ലാഹുവിന് ഏറ്റവും ഇഷ്ടമെന്ന് നബി ﷺ യോട് ചോദിക്കപ്പെട്ടു. അവിടുന്ന് പറഞ്ഞു: \"ചെറുതാണെങ്കിലും, മുടങ്ങാതെ ചെയ്യുന്നത്.\" അവിടുന്ന് ഇതും പറഞ്ഞു: \"നിങ്ങൾക്ക് കഴിയുന്ന അമലുകൾ മാത്രം ഏറ്റെടുക്കുക.\" (സ്വഹീഹുൽ ബുഖാരി 6465)\n\nആഇശ (റ) ഒരു അമൽ തുടങ്ങിയാൽ, പിന്നെ അത് മുടക്കാറില്ലായിരുന്നു. (സ്വഹീഹ് മുസ്‌ലിം 783)\n\nവലിയ എന്തെങ്കിലും ചെയ്യാൻ കാത്തിരിക്കേണ്ട. ഇന്ന് ഒരു ചെറിയ അമൽ തിരഞ്ഞെടുക്കൂ, അത് കൈവിടാതിരിക്കൂ.\n\nസേവ് ചെയ്യൂ, വീണ്ടും തുടങ്ങാൻ ആഗ്രഹിക്കുന്ന ഒരാൾക്ക് അയച്ചുകൊടുക്കൂ.\n\n#malayalamislamic #ഇസ്ലാം #hadith #islamicreminder #sunnah",
+   "yt_en_title": "The Deed Allah Loves Most Isn't the Biggest One | Hadith #Shorts",
+   "yt_ml_title": "അല്ലാഹുവിന് ഏറ്റവും ഇഷ്ടമുള്ള അമൽ ഏത്? | ഹദീസ് | Malayalam #Shorts"
   }
  ],
  "learnings": [
