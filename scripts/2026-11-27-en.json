@@ -1,0 +1,66 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "dawam",
+ "end_bg": 14,
+ "endcard": "Save this. Keep one small deed.",
+ "save": {
+  "ar": "أَحَبُّ الأَعْمَالِ إِلَى اللَّهِ تَعَالَى\nأَدْوَمُهَا وَإِنْ قَلَّ",
+  "tr": "“The acts most pleasing to Allah are those which are done continuously, even if they are small.”",
+  "ref": "Sahih Muslim 783"
+ },
+ "lines": [
+  {
+   "say": "The deed Allah loves most isn't the biggest one.",
+   "bg": 10
+  },
+  {
+   "say": "The Prophet, peace be upon him, was asked which deeds Allah loves most.",
+   "cap": "The Prophet ﷺ was asked which deeds Allah loves most",
+   "bg": 11
+  },
+  {
+   "say": "He said: the most constant ones, even if they are small.",
+   "scene": "h1",
+   "cap": "“The most constant ones, even if they are small”",
+   "bg": 11
+  },
+  {
+   "say": "And he said: take on only the deeds you are able to do.",
+   "scene": "h2",
+   "cap": "“Take on only the deeds you are able to do”",
+   "bg": 12
+  },
+  {
+   "say": "And whenever Aishah began a good deed, she kept on doing it.",
+   "cap": "Whenever Aishah began a deed, she kept on doing it",
+   "bg": 13
+  },
+  {
+   "say": "So don't wait to do something big. Pick one small deed, and don't let it go.",
+   "cap": "Don't wait for something big. Pick one small deed, and don't let it go.",
+   "bg": 13
+  },
+  {
+   "say": "Save this, and send it to someone who wants to start again.",
+   "cap": "Save this & send it to someone starting again 🤍",
+   "pause": 0.3,
+   "bg": 14
+  }
+ ],
+ "scenes": {
+  "h1": {
+   "ar": "أَحَبُّ الأَعْمَالِ إِلَى اللَّهِ تَعَالَى\nأَدْوَمُهَا وَإِنْ قَلَّ",
+   "tr": "“The acts most pleasing to Allah are those which are done continuously, even if they are small.”",
+   "ref": "Sahih Muslim 783"
+  },
+  "h2": {
+   "ar": "اكْلَفُوا مِنَ الأَعْمَالِ مَا تُطِيقُونَ",
+   "tr": "“Don't take upon yourselves, except the deeds which are within your ability.”",
+   "ref": "Sahih al-Bukhari 6465"
+  }
+ }
+}

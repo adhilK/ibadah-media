@@ -12,7 +12,7 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 129,
      "reach": 115,
@@ -61,7 +61,7 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 122,
      "reach": 103,
@@ -112,7 +112,7 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 1,
      "reach": 2,
@@ -162,7 +162,7 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 2,
      "reach": 2,
@@ -213,7 +213,7 @@
    "yt_ml_id": "gy0BsHgMGPI",
    "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
    "metrics": {
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "en": {
      "views": 129,
      "reach": 109,
@@ -285,7 +285,7 @@
      "total_interactions": 4,
      "avg_watch_ms": 3308
     },
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "yt_en": {
      "views": 367,
      "likes": 26
@@ -342,7 +342,7 @@
      "total_interactions": 7,
      "avg_watch_ms": 3330
     },
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
     "yt_en": {
      "views": 70,
      "likes": 4
@@ -396,18 +396,18 @@
      "likes": 11
     },
     "ml": {
-     "views": 141,
-     "reach": 120,
+     "views": 142,
+     "reach": 121,
      "saved": 0,
      "shares": 0,
      "total_interactions": 2,
-     "avg_watch_ms": 5759
+     "avg_watch_ms": 5713
     },
     "yt_ml": {
      "views": 190,
      "likes": 6
     },
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
    }
   },
   {
@@ -439,22 +439,22 @@
    "ml_url": "https://www.instagram.com/reel/DgKOW5ZgEy1/",
    "metrics": {
     "en": {
-     "views": 65,
-     "reach": 55,
+     "views": 66,
+     "reach": 57,
      "saved": 0,
      "shares": 0,
      "total_interactions": 1,
-     "avg_watch_ms": 3126
+     "avg_watch_ms": 3146
     },
     "ml": {
-     "views": 133,
-     "reach": 117,
+     "views": 134,
+     "reach": 119,
      "saved": 1,
      "shares": 0,
      "total_interactions": 2,
-     "avg_watch_ms": 6868
+     "avg_watch_ms": 6849
     },
-    "checked": "2026-11-26 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
    }
   },
   {
@@ -512,7 +512,26 @@
    "yt_ml_id": "xCJYhQ6oQBw",
    "ml_media_id": "18085137068350597",
    "ml_url": "https://www.instagram.com/reel/DgM-AWphncR/",
-   "posted_utc_ml": "2026-11-26T11:12"
+   "posted_utc_ml": "2026-11-26T11:12",
+   "metrics": {
+    "en": {
+     "views": 112,
+     "reach": 104,
+     "saved": 1,
+     "shares": 3,
+     "total_interactions": 11,
+     "avg_watch_ms": 6113
+    },
+    "ml": {
+     "views": 134,
+     "reach": 119,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 6,
+     "avg_watch_ms": 4767
+    },
+    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+   }
   }
  ],
  "learnings": [
@@ -583,6 +602,10 @@
   {
    "date": "2026-11-26",
    "note": "14-day IG (refreshed today): EN-first + 3h stagger + distinct visuals got BOTH accounts distributed for a 2nd day running (25th: EN 65 views/55 reach at ~24h, ML 133 views with 6.9s avg watch, the best ML watch time since the 17th). Posting setup now 2/2, so keep it unchanged. Content signal: EN watch time fell from 6.4s (24th, curiosity hook 'Of all the duas he could make...') to 3.1s (25th, feeling hook 'Restless, even when nothing is wrong?'), and EN's other strong day (21st, 4.9s) was also a direct question about the viewer. Apply today (one variable, EN+ML hook): a curiosity hook that promises a specific, surprising payoff from the hadith ('one small act...') instead of a feeling question; posting setup unchanged. YT: Composio's YouTube API quota exceeded again (403 quotaExceeded), no fresh Shorts stats; Shorts uploads may also fail today."
+  },
+  {
+   "date": "2026-11-27",
+   "note": "14-day IG (refreshed today): EN-first + 3h stagger + distinct visuals got BOTH accounts distributed for a 3rd day running (26th: EN 112 views/6.1s avg watch/3 shares/11 interactions; ML 134 views/4.8s), so the posting setup stays. The curiosity hook ('...one verse that isn't a rule at all') doubled EN watch time vs the 25th's feeling question (6.1s vs 3.1s) and matches the 24th's curiosity hook (6.4s): curiosity hooks win for EN, keep them on both languages. ML watch time fell 6.8s -> 4.8s while the ML reel ran 64.7s (EN 55.7s), well over PLAYBOOK's 30-45s. Apply today (one variable: length): keep curiosity hook + posting setup, cut both reels back to ~40-45s (fewer, tighter lines). YT: Composio's YouTube API quota exceeded again (403 quotaExceeded), no fresh Shorts stats."
   }
  ]
 }
