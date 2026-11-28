@@ -20,7 +20,8 @@ FPS = 30
 def tts(text, lang, voice, out):
     import hashlib
     cache = ROOT.parent / "cache"; cache.mkdir(exist_ok=True)
-    ck = cache / (hashlib.sha1(f"{voice['name']}|{voice.get('rate',0.95)}|{text}".encode()).hexdigest() + ".wav")
+    pv = "|pron2" if voice.get("engine") == "kokoro" else ""  # bump when KOKORO_PRON changes
+    ck = cache / (hashlib.sha1(f"{voice['name']}|{voice.get('rate',0.95)}|{text}{pv}".encode()).hexdigest() + ".wav")
     if ck.exists():
         shutil.copy(ck, out); return
     if voice.get("engine") == "kokoro":
@@ -46,8 +47,40 @@ def _kokoro(text, voice, out):
         from kokoro_onnx import Kokoro
         _KOKORO = Kokoro(str(KOKORO_DIR / "kokoro-v1.0.onnx"), str(KOKORO_DIR / "voices-v1.0.bin"))
     import soundfile as sf
-    audio, sr = _KOKORO.create(text, voice=voice["name"], speed=voice.get("rate", 1.0), lang="en-us")
+    ph = _kokoro_phonemes(text)
+    audio, sr = _KOKORO.create(ph, voice=voice["name"], speed=voice.get("rate", 1.0), lang="en-us", is_phonemes=True)
     sf.write(out, audio, sr, subtype="PCM_16")
+
+
+# Fixed pronunciations for Arabic words the English voice gets wrong (Adhil, 2026-11-28: "Allah" came out as
+# "AL-uh" /ˈælə/). Matched as whole words, case-insensitive; longest keys first. Add words here as they come up.
+KOKORO_PRON = {
+    "subhanallah": "sˈʊbhɑːn ɐlˈlɑːh", "inshallah": "ɪnʃɐ ɐlˈlɑːh", "insha allah": "ɪnʃɐ ɐlˈlɑːh",
+    "mashallah": "mɑːʃɐ ɐlˈlɑːh", "alhamdulillah": "ɐlhˌæmdʊlɪlˈlɑːh", "bismillah": "bɪsmɪlˈlɑːh",
+    "allahumma": "ɐlˌlɑːhˈʊmmɐ", "allahu": "ɐlˈlɑːhʊ", "allah's": "ɐlˈlɑːhz", "allah": "ɐlˈlɑːh",
+}
+
+
+def _kokoro_phonemes(text):
+    """Phonemize with espeak, but splice in KOKORO_PRON for listed words."""
+    import re
+    keys = sorted(KOKORO_PRON, key=len, reverse=True)
+    pat = re.compile(r"\b(" + "|".join(re.escape(k) for k in keys) + r")\b", re.I)
+    out, pos = [], 0
+    for m in pat.finditer(text):
+        seg = text[pos:m.start()]
+        if seg.strip():
+            out.append(_KOKORO.tokenizer.phonemize(seg, "en-us"))
+        out.append(KOKORO_PRON[m.group(1).lower()])
+        pos = m.end()
+    tail = text[pos:]
+    if tail.strip():
+        out.append(_KOKORO.tokenizer.phonemize(tail, "en-us"))
+    res = ""
+    for p in (p.strip() for p in out):
+        if p:
+            res += p if (not res or p[0] in ",.:;!?") else " " + p
+    return res
 
 
 def _tts(text, lang, voice, out):

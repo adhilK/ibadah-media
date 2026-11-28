@@ -600,7 +600,7 @@
    "pronunciation": "Kokoro respellings checked via its phonemizer: 'Ibraaheem' (ɪbɹɑːhˈiːm; plain 'Ibrahim' gave ˈɪbɹæhɪm), 'Ibn Abbaas' (ˈæbɑːz).",
    "motion": "Theme 'nar' (engine/themes/nar.glsl): hook = a great fire on a dark plain, sparks streaming up, smoke hiding the stars; 'burn him' = the fire climbs and roars; NEW motion 'the cooling' during 21:69: over ~5 s the flames turn from burning orange to a cool pale emerald and sink low, the rising sparks slow and drift down like cool dew, the smoke clears and the stars return; 'and safety' = a soft gold ring settles around the cooled fire and holds; 21:70/CTA/end = dawn, the fire gone, green shoots rising from the ash. No people or idols shown.",
    "visual_variant": "ML uses 'nar_ml' (mirrored, emerald night, lower horizon, emerald card).",
-   "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
+   "status": "approved by Adhil; IG EN 06:51Z and YT EN+ML 06:52Z published; IG ML scheduled for ~09:53Z (3h stagger)",
    "posting_plan": "after approval: IG EN first, IG ML 3+ hours later; YT both",
    "video_urls": {
     "en": "https://raw.githubusercontent.com/adhilK/ibadah-media/main/reels/2026-11-28/ibadah-daily.mp4",
@@ -631,7 +631,13 @@
     "Islamic reminder",
     "Prophet stories",
     "Malayalam shorts"
-   ]
+   ],
+   "en_media_id": "18120609920101709",
+   "en_url": "https://www.instagram.com/reel/DgRpwOCOGz6/",
+   "posted_utc_en": "2026-11-28T06:51:36Z",
+   "yt_en_id": "TnkxNJs3jNQ",
+   "yt_ml_id": "NwOWnlw6BiY",
+   "feedback": "Adhil (on approval): fix how the English voice says 'Allah' in future. Done: KOKORO_PRON phoneme overrides in engine/build.py ('Allah' -> ɐlˈlɑːh, was ˈælə)."
   }
  ],
  "learnings": [
