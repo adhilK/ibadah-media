@@ -12,7 +12,7 @@
    "ml_url": "https://www.instagram.com/reel/Df1y6G2EY_o/",
    "posted_utc": "2026-11-17T11:13",
    "metrics": {
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "en": {
      "views": 129,
      "reach": 115,
@@ -61,7 +61,7 @@
    "yt_en_id": "P7WnXWWnjKs",
    "yt_ml_id": "kzI18OlsZaA",
    "metrics": {
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "en": {
      "views": 122,
      "reach": 103,
@@ -112,7 +112,7 @@
    "yt_en_id": "MEgFAt5TKwQ",
    "yt_ml_id": "55dpYloBSCk",
    "metrics": {
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "en": {
      "views": 1,
      "reach": 2,
@@ -162,7 +162,7 @@
    "yt_en_id": "fI0AS8AGnro",
    "yt_ml_id": "K-YOtIHRSKg",
    "metrics": {
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "en": {
      "views": 2,
      "reach": 2,
@@ -213,7 +213,7 @@
    "yt_ml_id": "gy0BsHgMGPI",
    "yt_en_title": "Think Your Sins Are Too Many for Allah to Forgive? | Qur'an 39:53 #Shorts",
    "metrics": {
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "en": {
      "views": 129,
      "reach": 109,
@@ -285,7 +285,7 @@
      "total_interactions": 4,
      "avg_watch_ms": 3308
     },
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "yt_en": {
      "views": 367,
      "likes": 26
@@ -342,7 +342,7 @@
      "total_interactions": 7,
      "avg_watch_ms": 3330
     },
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)",
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)",
     "yt_en": {
      "views": 70,
      "likes": 4
@@ -407,7 +407,7 @@
      "views": 190,
      "likes": 6
     },
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)"
    }
   },
   {
@@ -454,7 +454,7 @@
      "total_interactions": 2,
      "avg_watch_ms": 6849
     },
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)"
    }
   },
   {
@@ -530,7 +530,7 @@
      "total_interactions": 6,
      "avg_watch_ms": 4767
     },
-    "checked": "2026-11-27 (IG via API; YT quotaExceeded, YT numbers are from the last successful pull)"
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)"
    }
   },
   {
@@ -561,7 +561,77 @@
    "yt_en_id": "GVa8EDs-Xgg",
    "yt_ml_id": "tyZF6eIhi5E",
    "ml_media_id": "17917496505509045",
-   "ml_url": "https://www.instagram.com/reel/DgP574nBumK/"
+   "ml_url": "https://www.instagram.com/reel/DgP574nBumK/",
+   "metrics": {
+    "en": {
+     "views": 108,
+     "reach": 103,
+     "saved": 1,
+     "shares": 0,
+     "total_interactions": 10,
+     "avg_watch_ms": 4505
+    },
+    "ml": {
+     "views": 139,
+     "reach": 118,
+     "saved": 0,
+     "shares": 0,
+     "total_interactions": 11,
+     "avg_watch_ms": 7445
+    },
+    "checked": "2026-11-28 (IG via API; YT quotaExceeded again, YT numbers are from the last successful pull)"
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "type": "prophet_story",
+   "topic": "Ibrahim and the fire: 'O fire, be coolness and safety upon Ibrahim' (Qur'an 21:69)",
+   "rotation_note": "Rotation: prophet story (last: Musa at the sea, 23rd). sunnah.com/dorar.net could not be opened this run (WebFetch permission prompt timed out; blocked from the shell), so the Bukhari 4563 narration (Ibn Abbas: Ibrahim said 'Hasbunallahu wa ni'mal wakil') was left out; the story uses only the Qur'an and Ibn Kathir's tafsir.",
+   "source": "Qur'an 21:51-73 and 37:97-98 via api.quran.com, opened today (Uthmani; Saheeh Intl id 20; Malayalam id 37, cards copied exactly with chillu letters normalised). Used: 21:58 (broke the idols), 21:60 ('a young man... called Abraham'), 21:66 ('do you worship instead of Allah that which does not benefit you at all or harm you?'), 21:68 ('Burn him'), 37:97 ('Construct for him a furnace and throw him into the burning fire'), 21:69 (card + save card), 21:70 (card). Tafsir Ibn Kathir (abridged) on 21:68-70 via api.quran.com tafsir 169, opened today: 'When their arguments were refuted... they resorted to using their power' and 'Ibn Abbas and Abu Al-Aliyah said: Were it not for the fact that Allah said (and safety), Ibrahim would have been harmed by its coldness.' The tafsir's As-Suddi/catapult/Kurdish-man details were left out (not from Qur'an or sahih hadith).",
+   "hook": {
+    "en": "They built a fire to throw one young man into. Then Allah spoke to the fire.",
+    "ml": "ഒരു ചെറുപ്പക്കാരനായി അവർ ഒരു വലിയ തീ ഒരുക്കി. പിന്നെ അല്ലാഹു ആ തീയോട് സംസാരിച്ചു. (cap: ഒരു ചെറുപ്പക്കാരനായി അവർ തീ ഒരുക്കി. പിന്നെ അല്ലാഹു ആ തീയോട് സംസാരിച്ചു.)"
+   },
+   "hook_style": "story cold-open (today's single variable)",
+   "len_s": {
+    "en": 46.2,
+    "ml": 48.8
+   },
+   "pronunciation": "Kokoro respellings checked via its phonemizer: 'Ibraaheem' (ɪbɹɑːhˈiːm; plain 'Ibrahim' gave ˈɪbɹæhɪm), 'Ibn Abbaas' (ˈæbɑːz).",
+   "motion": "Theme 'nar' (engine/themes/nar.glsl): hook = a great fire on a dark plain, sparks streaming up, smoke hiding the stars; 'burn him' = the fire climbs and roars; NEW motion 'the cooling' during 21:69: over ~5 s the flames turn from burning orange to a cool pale emerald and sink low, the rising sparks slow and drift down like cool dew, the smoke clears and the stars return; 'and safety' = a soft gold ring settles around the cooled fire and holds; 21:70/CTA/end = dawn, the fire gone, green shoots rising from the ash. No people or idols shown.",
+   "visual_variant": "ML uses 'nar_ml' (mirrored, emerald night, lower horizon, emerald card).",
+   "status": "awaiting Adhil's approval (approval period until 2026-12-01)",
+   "posting_plan": "after approval: IG EN first, IG ML 3+ hours later; YT both",
+   "video_urls": {
+    "en": "https://raw.githubusercontent.com/adhilK/ibadah-media/main/reels/2026-11-28/ibadah-daily.mp4",
+    "ml": "https://raw.githubusercontent.com/adhilK/ibadah-media/main/reels/2026-11-28/ibadah-malayalam.mp4"
+   },
+   "caption_en": "They built a fire to throw one young man into. Then Allah spoke to the fire. 🔥\n\n\"We [i.e., Allāh] said, 'O fire, be coolness and safety upon Abraham.'\" (Qur'an 21:69)\n\"And they intended for him a plan [i.e., harm], but We made them the greatest losers.\" (Qur'an 21:70)\nTranslation: Saheeh International\n\nIbrahim (peace be upon him) broke their idols and asked: \"Then do you worship instead of Allāh that which does not benefit you at all or harm you?\" (21:66). With no answer left, they said, \"Burn him\" (21:68), \"Construct for him a furnace and throw him into the burning fire\" (37:97).\n\nIbn Kathir records that Ibn Abbas and Abu al-Aliyah said: had Allah not said \"and safety,\" Ibrahim would have been harmed by its coldness.\n\nWhatever fire you're facing, don't stare at the flames. Turn to the One they obey. Save this, and send it to someone facing their own fire.\n\n#islamicreminder #quran #prophetstories #ibrahim #tawakkul",
+   "caption_ml": "ഒരു ചെറുപ്പക്കാരനായി അവർ തീ ഒരുക്കി. പിന്നെ അല്ലാഹു ആ തീയോട് സംസാരിച്ചു. 🔥\n\n\"നാം പറഞ്ഞു: തീയേ, നീ ഇബ്രാഹീമിന് തണുപ്പും സമാധാനവുമായിരിക്കുക.\" (ഖുർആൻ 21:69)\n\"അദ്ദേഹത്തിന്റെ കാര്യത്തിൽ ഒരു തന്ത്രം പ്രയോഗിക്കുവാൻ അവർ ഉദ്ദേശിച്ചു. എന്നാൽ അവരെ ഏറ്റവും നഷ്ടം പറ്റിയവരാക്കുകയാണ് നാം ചെയ്തത്.\" (ഖുർആൻ 21:70)\n\nഇബ്രാഹീം നബി(അ) വിഗ്രഹങ്ങൾ തകർത്ത് ചോദിച്ചു: \"അല്ലാഹുവിന് പുറമെ, നിങ്ങൾക്ക് യാതൊരു ഉപകാരമോ ഉപദ്രവമോ ചെയ്യാത്ത വസ്തുക്കളെ നിങ്ങൾ ആരാധിക്കുകയാണോ?\" (21:66). മറുപടി ഇല്ലാതായപ്പോൾ അവർ പറഞ്ഞു: \"ഇവനെ ചുട്ടെരിച്ച് കളയുക\" (21:68).\n\nഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു: ഇബ്നു അബ്ബാസും (റ) അബുൽ ആലിയയും പറഞ്ഞു, \"സമാധാനം\" എന്ന് അല്ലാഹു പറഞ്ഞിരുന്നില്ലെങ്കിൽ ആ തണുപ്പ് തന്നെ ഇബ്രാഹീമിനെ (അ) ഉപദ്രവിക്കുമായിരുന്നു.\n\nനേരിടുന്ന തീ ഏതുമാകട്ടെ, ജ്വാലകളെ നോക്കേണ്ട. അവ അനുസരിക്കുന്ന റബ്ബിലേക്ക് തിരിയൂ. ഇത് സേവ് ചെയ്യൂ, പരീക്ഷണത്തിലുള്ള ഒരാൾക്ക് അയക്കൂ.\n\n#malayalamislamic #ഇസ്ലാം #quran #islamicreminder #prophetstories",
+   "yt_en_title": "They Built a Fire for One Young Man. Then Allah Spoke to It | Qur'an 21:69 #Shorts",
+   "yt_ml_title": "ഇബ്രാഹീം നബിയും തീയും: അല്ലാഹു തീയോട് പറഞ്ഞത് | ഖുർആൻ 21:69 | Malayalam #Shorts",
+   "yt_en_description": "They built a fire to throw one young man into. Then Allah spoke to the fire. 🔥\n\n\"We [i.e., Allāh] said, 'O fire, be coolness and safety upon Abraham.'\" (Qur'an 21:69)\n\"And they intended for him a plan [i.e., harm], but We made them the greatest losers.\" (Qur'an 21:70)\nTranslation: Saheeh International\n\nIbrahim (peace be upon him) broke their idols and asked: \"Then do you worship instead of Allāh that which does not benefit you at all or harm you?\" (21:66). With no answer left, they said, \"Burn him\" (21:68), \"Construct for him a furnace and throw him into the burning fire\" (37:97).\n\nIbn Kathir records that Ibn Abbas and Abu al-Aliyah said: had Allah not said \"and safety,\" Ibrahim would have been harmed by its coldness.\n\nWhatever fire you're facing, don't stare at the flames. Turn to the One they obey. Save this, and send it to someone facing their own fire.\n\n#islamicreminder #quran #prophetstories #ibrahim #tawakkul\n\nOne authentic reminder every day — every source cited.\n#Shorts",
+   "yt_ml_description": "ഒരു ചെറുപ്പക്കാരനായി അവർ തീ ഒരുക്കി. പിന്നെ അല്ലാഹു ആ തീയോട് സംസാരിച്ചു. 🔥\n\n\"നാം പറഞ്ഞു: തീയേ, നീ ഇബ്രാഹീമിന് തണുപ്പും സമാധാനവുമായിരിക്കുക.\" (ഖുർആൻ 21:69)\n\"അദ്ദേഹത്തിന്റെ കാര്യത്തിൽ ഒരു തന്ത്രം പ്രയോഗിക്കുവാൻ അവർ ഉദ്ദേശിച്ചു. എന്നാൽ അവരെ ഏറ്റവും നഷ്ടം പറ്റിയവരാക്കുകയാണ് നാം ചെയ്തത്.\" (ഖുർആൻ 21:70)\n\nഇബ്രാഹീം നബി(അ) വിഗ്രഹങ്ങൾ തകർത്ത് ചോദിച്ചു: \"അല്ലാഹുവിന് പുറമെ, നിങ്ങൾക്ക് യാതൊരു ഉപകാരമോ ഉപദ്രവമോ ചെയ്യാത്ത വസ്തുക്കളെ നിങ്ങൾ ആരാധിക്കുകയാണോ?\" (21:66). മറുപടി ഇല്ലാതായപ്പോൾ അവർ പറഞ്ഞു: \"ഇവനെ ചുട്ടെരിച്ച് കളയുക\" (21:68).\n\nഇബ്നു കസീർ ഉദ്ധരിക്കുന്നു: ഇബ്നു അബ്ബാസും (റ) അബുൽ ആലിയയും പറഞ്ഞു, \"സമാധാനം\" എന്ന് അല്ലാഹു പറഞ്ഞിരുന്നില്ലെങ്കിൽ ആ തണുപ്പ് തന്നെ ഇബ്രാഹീമിനെ (അ) ഉപദ്രവിക്കുമായിരുന്നു.\n\nനേരിടുന്ന തീ ഏതുമാകട്ടെ, ജ്വാലകളെ നോക്കേണ്ട. അവ അനുസരിക്കുന്ന റബ്ബിലേക്ക് തിരിയൂ. ഇത് സേവ് ചെയ്യൂ, പരീക്ഷണത്തിലുള്ള ഒരാൾക്ക് അയക്കൂ.\n\n#malayalamislamic #ഇസ്ലാം #quran #islamicreminder #prophetstories\n\nOne authentic reminder every day — every source cited.\n#Shorts",
+   "yt_tags_en": [
+    "Ibrahim",
+    "Prophet Ibrahim",
+    "Quran 21:69",
+    "Islamic reminder",
+    "Quran",
+    "Prophet stories",
+    "Tawakkul",
+    "Islamic shorts"
+   ],
+   "yt_tags_ml": [
+    "Malayalam Islamic",
+    "Ibrahim Nabi",
+    "ഇബ്രാഹീം നബി",
+    "Quran Malayalam",
+    "ഖുർആൻ",
+    "Islamic reminder",
+    "Prophet stories",
+    "Malayalam shorts"
+   ]
   }
  ],
  "learnings": [
@@ -636,6 +706,10 @@
   {
    "date": "2026-11-27",
    "note": "14-day IG (refreshed today): EN-first + 3h stagger + distinct visuals got BOTH accounts distributed for a 3rd day running (26th: EN 112 views/6.1s avg watch/3 shares/11 interactions; ML 134 views/4.8s), so the posting setup stays. The curiosity hook ('...one verse that isn't a rule at all') doubled EN watch time vs the 25th's feeling question (6.1s vs 3.1s) and matches the 24th's curiosity hook (6.4s): curiosity hooks win for EN, keep them on both languages. ML watch time fell 6.8s -> 4.8s while the ML reel ran 64.7s (EN 55.7s), well over PLAYBOOK's 30-45s. Apply today (one variable: length): keep curiosity hook + posting setup, cut both reels back to ~40-45s (fewer, tighter lines). YT: Composio's YouTube API quota exceeded again (403 quotaExceeded), no fresh Shorts stats."
+  },
+  {
+   "date": "2026-11-28",
+   "note": "14-day IG (refreshed today): the 27th's length cut (EN 37.0s / ML 41.3s, vs 55.7/64.7s on the 26th) gave ML its best avg watch time of the fortnight (7.4s, 139 views, 11 interactions), so short reels stay. EN dipped (4.5s vs 6.1s; 108 views) after only ~16h live, with a statement hook rather than a question; both accounts were distributed for a 4th day running, so the posting setup (EN first, ML +3h, distinct visuals) stays. Apply today (one variable: hook style): a story cold-open that drops the viewer mid-scene ('They built a fire to throw one young man into. Then Allah spoke to the fire.'), keeping length ~41-44s spoken and the posting setup unchanged. YT: Composio's YouTube API still 403 quotaExceeded, no fresh Shorts stats."
   }
  ]
 }
