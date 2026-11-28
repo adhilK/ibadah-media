@@ -1,0 +1,71 @@
+{
+ "lang": "en",
+ "handle": "@ibadah.daily",
+ "offset": 0.6,
+ "gap": 0.35,
+ "tail": 5.0,
+ "theme": "nar",
+ "end_bg": 14,
+ "endcard": "Save this for the day you face your own fire",
+ "save": {
+  "ar": "يَـٰنَارُ كُونِى بَرْدًا وَسَلَـٰمًا عَلَىٰٓ إِبْرَٰهِيمَ",
+  "tr": "“O fire, be coolness and safety upon Abraham.”",
+  "ref": "Qur'an 21 : 69"
+ },
+ "lines": [
+  {
+   "say": "They built a fire to throw one young man into. Then Allah spoke to the fire.",
+   "bg": 10
+  },
+  {
+   "say": "Ibraaheem, peace be upon him, broke their idols, and asked: why worship what can't benefit or harm you?",
+   "cap": "Ibrahim (peace be upon him) broke their idols and asked: why worship what can't benefit or harm you?",
+   "bg": 10
+  },
+  {
+   "say": "With no answer left, they said: burn him.",
+   "cap": "With no answer left, they said: “Burn him.”",
+   "bg": 11
+  },
+  {
+   "say": "And Allah said: O fire, be coolness and safety upon Ibraaheem.",
+   "scene": "v1",
+   "cap": "Allah said: O fire, be coolness and safety upon Ibrahim.",
+   "bg": 12
+  },
+  {
+   "say": "Ibn Abbaas said: had Allah not said, and safety, the cold itself would have harmed him.",
+   "cap": "Ibn Abbas: had Allah not said “and safety,” the cold itself would have harmed him.",
+   "bg": 13
+  },
+  {
+   "say": "They wanted to harm him, but Allah made them the greatest losers.",
+   "scene": "v2",
+   "cap": "They wanted to harm him, but Allah made them the greatest losers.",
+   "bg": 14
+  },
+  {
+   "say": "So whatever fire you're facing, don't stare at the flames. Turn to the One they obey.",
+   "cap": "Whatever fire you're facing, don't stare at the flames. Turn to the One they obey.",
+   "bg": 14
+  },
+  {
+   "say": "Save this, and send it to someone facing their own fire.",
+   "cap": "Save this & send it to someone facing their own fire 🤍",
+   "pause": 0.3,
+   "bg": 14
+  }
+ ],
+ "scenes": {
+  "v1": {
+   "ar": "قُلْنَا يَـٰنَارُ كُونِى بَرْدًا وَسَلَـٰمًا عَلَىٰٓ إِبْرَٰهِيمَ",
+   "tr": "“We [i.e., Allāh] said, ‘O fire, be coolness and safety upon Abraham.’”",
+   "ref": "Qur'an 21 : 69"
+  },
+  "v2": {
+   "ar": "وَأَرَادُوا۟ بِهِۦ كَيْدًا فَجَعَلْنَـٰهُمُ ٱلْأَخْسَرِينَ",
+   "tr": "“And they intended for him a plan [i.e., harm], but We made them the greatest losers.”",
+   "ref": "Qur'an 21 : 70"
+  }
+ }
+}
